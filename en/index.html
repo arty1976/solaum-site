@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLAUM | AI Bio Chambers that Turn Empty Storefronts into City Farms</title>
+<meta name="description" content="SOLAUM grows fresh vegetables in refrigerator-sized AI bio chambers placed in vacant urban spaces and supplies them where they are grown. Patent-pending reflective-mirror grower; first micro farm planned in Daegu, Korea.">
+<link rel="canonical" href="https://www.solaum.co.kr/en/">
+<link rel="alternate" hreflang="ko" href="https://www.solaum.co.kr/">
+<link rel="alternate" hreflang="en" href="https://www.solaum.co.kr/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.solaum.co.kr/">
+<meta name="theme-color" content="#0B2E22">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SOLAUM">
+<meta property="og:title" content="SOLAUM | Turning Empty Storefronts into City Farms">
+<meta property="og:description" content="Patent-pending AI bio chambers that grow fresh vegetables in vacant city spaces and supply them on the spot.">
+<meta property="og:url" content="https://www.solaum.co.kr/en/">
+<meta property="og:image" content="https://www.solaum.co.kr/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preload" as="image" href="../img/farm-aisle.webp" imagesrcset="../img/farm-aisle-800.webp 800w, ../img/farm-aisle.webp 1586w" imagesizes="(max-width: 920px) 100vw, 640px">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SOLAUM Co., Ltd.", "alternateName": "SOLAUM", "url": "https://www.solaum.co.kr/", "logo": "https://www.solaum.co.kr/img/solaum-logo.png", "email": "info@solaum.co.kr", "telephone": "+82533829789", "foundingDate": "2026-11-02", "address": {"@type": "PostalAddress", "streetAddress": "검단로 161", "addressLocality": "대구광역시 북구", "addressCountry": "KR"}}</script>
+<style>:root{
+  --ink:#0B2E22; --ink-2:#2C3D36; --text:#5D6B65; --muted:#8A968F;
+  --green:#138A48; --green-2:#42C15B; --mint:#2CCFAE;
+  --bg:#FFFFFF; --tint:#F4F8F5; --line:#E2E9E4;
+  --dark:#0B2E22; --dark-2:#14412F; --dark-line:rgba(255,255,255,.12);
+  --r-xl:36px; --r-lg:28px; --r-md:20px; --r-sm:14px;
+  --sh:0 30px 90px rgba(11,46,34,.10); --sh-sm:0 12px 34px rgba(11,46,34,.08);
+  --wrap:1200px; --pad:clamp(20px,4vw,48px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Pretendard,"Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--green-2);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-9999px;top:10px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;z-index:50}
+.skip:focus{left:14px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3,h4{margin:0;color:var(--ink);font-weight:700}
+h1{font-size:clamp(2.75rem,1.5rem + 4.6vw,5.25rem);line-height:1.08;letter-spacing:-.055em}
+h2{font-size:clamp(2.1rem,1.25rem + 3.1vw,3.65rem);line-height:1.12;letter-spacing:-.05em}
+h3{font-size:1.375rem;line-height:1.4;letter-spacing:-.03em}
+h4{font-size:1.0625rem;line-height:1.45;letter-spacing:-.02em}
+p{margin:0}
+.lead{font-size:clamp(1.0625rem,1rem + .35vw,1.3125rem);line-height:1.85;color:var(--text);max-width:44em}
+.small{font-size:.875rem;line-height:1.65}
+.muted{color:var(--muted)}
+.cap{margin-top:12px;font-size:.8125rem;color:var(--muted)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
+.brand img{height:42px;width:auto}
+.nav{display:flex;align-items:center;gap:4px;margin-left:auto}
+.nav a{text-decoration:none;font-size:.9375rem;font-weight:600;color:var(--ink-2);padding:9px 16px;border-radius:999px;transition:background .2s,color .2s,box-shadow .2s}
+.nav a:hover{background:var(--tint)}
+.nav a.active{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(19,138,72,.28)}
+.nav .cta{background:var(--ink);color:#fff}
+.nav .cta:hover{background:var(--dark-2)}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 26px;border-radius:999px;
+  font-weight:700;font-size:1rem;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(135deg,var(--green) 0%,#25A85A 55%,var(--green-2) 100%);color:#fff;box-shadow:0 16px 34px rgba(19,138,72,.30)}
+.btn.light{background:#fff;color:var(--ink);box-shadow:var(--sh-sm);border:1px solid var(--line)}
+
+/* hero */
+.hero{position:relative;padding:clamp(56px,8vw,112px) 0 clamp(72px,9vw,128px);overflow:hidden;
+  background:radial-gradient(900px 520px at 85% 10%,rgba(66,193,91,.14),transparent 60%),
+             radial-gradient(700px 480px at 0% 100%,rgba(44,207,174,.10),transparent 60%),#F6FAF7}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,5vw,72px);align-items:center}
+.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;font-size:.9375rem;font-weight:700;color:var(--green);letter-spacing:-.01em}
+.eyebrow::before{content:"";width:40px;height:2px;background:var(--green);border-radius:2px}
+.hero h1{margin-bottom:28px}
+.hero .lead{margin-bottom:40px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:48px}
+.hero-stats dt{font-size:.8125rem;color:var(--muted);font-weight:500}
+.hero-stats dd{margin:2px 0 0;font-size:1.25rem;font-weight:700;letter-spacing:-.03em}
+.hero-media{position:relative}
+.photo{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh);background:#E9EFEB;isolation:isolate}
+.photo img{width:100%}
+.hero .photo img{aspect-ratio:1/0.86;object-fit:cover;object-position:52% 50%}
+.split.fill .photo{height:100%}
+.split.fill .photo img{height:100%;object-fit:cover}
+.split.top{align-items:start}
+.hero .photo{animation:rise 1s cubic-bezier(.2,.7,.2,1) both .1s}
+@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.chip-float{position:absolute;left:22px;bottom:22px;display:flex;align-items:center;gap:10px;padding:11px 16px;border-radius:999px;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:.875rem;font-weight:700;box-shadow:var(--sh-sm)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--green-2);box-shadow:0 0 0 4px rgba(66,193,91,.18);flex:none}
+.tag-render{position:absolute;right:18px;top:18px;padding:6px 12px;border-radius:999px;background:rgba(11,46,34,.62);color:#fff;font-size:.75rem;font-weight:600}
+
+/* sections */
+.sec{padding:clamp(80px,10vw,140px) 0}
+.sec.tint{background:var(--tint)}
+.sec.glow{background:radial-gradient(800px 420px at 85% 0%,rgba(66,193,91,.10),transparent 60%),#fff}
+.sec-head{max-width:860px;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head h2{margin-bottom:20px}
+.sec-head .kicker{font-size:.9375rem;font-weight:700;color:var(--green);margin-bottom:14px}
+
+/* cards */
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(24px,2.6vw,36px);
+  box-shadow:0 1px 0 rgba(11,46,34,.02)}
+.card.raised{box-shadow:var(--sh);border-radius:var(--r-xl)}
+.grid{display:grid;gap:18px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* problem */
+.stat .num{font-size:clamp(2.4rem,1.8rem + 1.8vw,3.25rem);line-height:1;font-weight:700;letter-spacing:-.05em;color:var(--green);font-variant-numeric:tabular-nums;margin-bottom:20px}
+.stat .num small{font-size:.5em;margin-left:2px}
+.stat h3{font-size:1.1875rem;margin-bottom:8px}
+.stat p{color:var(--text);font-size:.9375rem;line-height:1.7}
+.card.stat{background:linear-gradient(180deg,#fff 0%,#fff 60%,#F7FAF8 100%)}
+.src{margin-top:22px;color:var(--muted)}
+
+/* chamber */
+.split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,3vw,40px);align-items:stretch}
+.specs{display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.spec-list{list-style:none;margin:0;padding:0}
+.spec-list li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.spec-list li:first-child{padding-top:0}
+.spec-list span{color:var(--text)}
+.spec-list b{font-weight:700;text-align:right}
+.feat h4{margin-bottom:6px}
+.feat p{color:var(--text);font-size:.9375rem;line-height:1.65}
+.feat .ic{width:40px;height:40px;border-radius:12px;background:var(--tint);display:grid;place-items:center;margin-bottom:18px;color:var(--green)}
+.row-gap{margin-top:18px}
+
+/* spec bar */
+.specbar{display:flex;flex-direction:column;gap:14px}
+.specbar dl{margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px 20px}
+.specbar dl > div{padding-left:16px;border-left:2px solid #DDE8E1}
+.specbar dt{font-size:.8125rem;color:var(--muted);font-weight:500}
+.specbar dd{margin:4px 0 0;font-weight:700;letter-spacing:-.02em;line-height:1.4}
+@media (max-width:1080px){.specbar dl{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.specbar dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* tech: mirror compare */
+.compare figure{margin:0}
+.compare svg{width:100%;height:auto;border-radius:18px}
+.compare figcaption{margin-top:16px}
+.compare figcaption b{display:block;font-size:1.0625rem}
+.compare figcaption span{color:var(--text);font-size:.9375rem}
+.patent{background:var(--dark);color:#fff;border-color:transparent}
+.patent h3{color:#fff;margin-bottom:18px}
+.patent dl{margin:0}
+.patent dt{font-size:.8125rem;color:rgba(255,255,255,.6);margin-top:14px}
+.patent dd{margin:2px 0 0;font-weight:600}
+.patent p{color:rgba(255,255,255,.72);font-size:.875rem;margin-top:22px;line-height:1.65}
+
+/* AI */
+.layers{display:flex;flex-direction:column;gap:0}
+.layer{border-radius:var(--r-md);padding:20px 22px;background:#fff;border:1px solid var(--line)}
+.layer b{display:block;font-size:1.0625rem;margin-bottom:2px}
+.layer span{color:var(--text);font-size:.9375rem;line-height:1.6;display:block}
+.layer.ai{border:1.5px dashed #9FB7AA;background:#FBFDFC}
+.layer.plc{border:1.5px solid var(--green);box-shadow:inset 5px 0 0 var(--green)}
+.flowline{display:flex;justify-content:space-around;padding:8px 0;font-size:.8125rem;color:var(--muted)}
+.flowline span{display:flex;align-items:center;gap:6px}
+.table-card{padding:0;overflow:hidden}
+.tbl{width:100%;border-collapse:collapse;font-size:.9375rem}
+.tbl th,.tbl td{text-align:left;padding:18px 24px;vertical-align:top;border-top:1px solid var(--line)}
+.tbl thead th{background:#F7FAF8;border-top:0;font-size:.875rem;font-weight:700;color:var(--ink)}
+.tbl td:first-child{font-weight:700;white-space:nowrap}
+.tbl td{color:var(--text)}
+.tbl td:first-child{color:var(--ink)}
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.8125rem;font-weight:700;white-space:nowrap}
+.pill.plan{background:#EAF6EE;color:var(--green)}
+.pill.done{background:var(--green);color:#fff}
+.note{margin-top:16px;font-size:.875rem;color:var(--muted)}
+
+/* microfarm */
+.tabs{display:inline-flex;gap:6px;padding:6px;background:var(--tint);border-radius:999px;margin-bottom:20px}
+.tabs button{border:0;background:transparent;padding:10px 20px;border-radius:999px;font-weight:700;font-size:.9375rem;color:var(--ink-2);cursor:pointer}
+.tabs button[aria-selected="true"]{background:#fff;color:var(--ink);box-shadow:var(--sh-sm)}
+.zones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.zone{display:flex;gap:12px;align-items:flex-start;padding:18px;border-radius:var(--r-md);background:#fff;border:1px solid var(--line)}
+.zone .dot{margin-top:8px}
+.zone b{display:block;font-size:.9688rem}
+.zone span{display:block;color:var(--text);font-size:.875rem;line-height:1.55;margin-top:2px}
+.flow-card{margin-top:18px;display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:36px;align-items:center}
+.flow-card h3{margin-bottom:10px}
+.flow-card p{color:var(--text);font-size:.9375rem}
+.chain-row{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:16px;align-items:center}
+.chain-row + .chain-row{margin-top:16px}
+.chain-row > b{font-size:.875rem}
+.chain{list-style:none;margin:0;padding:0;display:flex;align-items:center;flex-wrap:wrap;row-gap:10px}
+.chain li{display:flex;align-items:center}
+.chain li span{padding:8px 14px;border-radius:999px;border:1px solid #CBD7D0;background:#fff;font-size:.875rem;font-weight:600;white-space:nowrap}
+.chain li:not(:last-child)::after{content:"";width:18px;height:1.5px;background:#B7C6BD;margin:0 4px}
+.chain.ours li span{background:var(--green);border-color:var(--green);color:#fff}
+.chain.ours li:not(:last-child)::after{background:var(--green);width:40px}
+
+/* scale */
+.space .photo{border-radius:var(--r-lg);box-shadow:none;margin:-1px -1px 0;border-radius:var(--r-lg) var(--r-lg) 0 0}
+.space{padding:0;overflow:hidden}
+.space .body{padding:28px clamp(24px,2.6vw,34px) 32px}
+.space h3{margin-bottom:8px}
+.space p{color:var(--text);font-size:.9375rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{padding:6px 12px;border-radius:999px;background:#EEF6F1;color:var(--green);font-size:.8125rem;font-weight:700}
+.who{margin-top:18px}
+.who .card h4{margin-bottom:6px}
+.who .card p{color:var(--text);font-size:.9375rem;line-height:1.65}
+
+/* roadmap */
+.phase .label{font-size:.8125rem;font-weight:700;color:var(--green);margin-bottom:4px}
+.phase .when{font-size:.875rem;color:var(--muted);margin-bottom:16px}
+.phase h3{font-size:1.25rem;margin-bottom:12px}
+.phase ul{margin:0;padding:0;list-style:none}
+.phase li{position:relative;padding-left:16px;color:var(--text);font-size:.9375rem;line-height:1.6;margin-top:6px}
+.phase li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:#B7C6BD}
+.phase.done li::before{background:var(--green)}
+.phase{display:flex;flex-direction:column}
+.phase .pill{margin-top:auto;align-self:flex-start}
+.phase ul{margin-bottom:22px}
+.pledge{margin-top:18px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px 40px;align-items:center}
+.pledge p{color:var(--text)}
+
+/* vision */
+.vision{background:var(--dark);color:#fff;text-align:center;padding:clamp(88px,11vw,150px) 0;
+  background-image:radial-gradient(700px 300px at 50% 0%,rgba(66,193,91,.18),transparent 70%)}
+.vision h2{color:#fff;max-width:16em;margin:0 auto 24px}
+.vision p{color:rgba(255,255,255,.75);max-width:40em;margin:0 auto;font-size:1.125rem;line-height:1.85}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:22px;align-items:stretch}
+.c-dark{background:var(--dark);color:#fff;border-radius:var(--r-xl);padding:clamp(32px,4vw,52px);box-shadow:var(--sh)}
+.c-dark h2{color:#fff;font-size:clamp(2rem,1.3rem + 2.4vw,3rem);margin-bottom:20px}
+.c-dark > p{color:rgba(255,255,255,.75);margin-bottom:28px}
+.c-type{display:block;padding:18px 20px;border-radius:var(--r-md);background:var(--dark-2);border:1px solid var(--dark-line);margin-top:10px}
+.c-type b{display:block;color:#fff}
+.c-type span{display:block;color:rgba(255,255,255,.66);font-size:.875rem;margin-top:2px}
+.c-meta{margin-top:26px;font-size:.875rem;color:rgba(255,255,255,.66);line-height:1.8}
+.c-meta a{color:#fff;text-decoration:none}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 16px;align-content:start}
+.form h3{grid-column:1/-1;font-size:1.625rem;margin-bottom:6px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.8125rem;font-weight:700}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border-radius:var(--r-sm);border:1px solid #D5DFD9;background:#fff;font-size:.9375rem}
+.field textarea{min-height:150px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(19,138,72,.12)}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:6px}
+.form-foot small{color:var(--muted)}
+
+/* footer */
+footer{padding:56px 0 72px;border-top:1px solid var(--line);font-size:.875rem;color:var(--text)}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+footer .brand img{height:30px;margin-bottom:22px}
+footer dl{margin:0;display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:4px 12px}
+footer dt{color:var(--muted)}
+footer dd{margin:0}
+footer details summary{cursor:pointer;font-weight:700;color:var(--ink)}
+footer details ul{margin:12px 0 0;padding-left:18px;line-height:1.8}
+footer .copy{grid-column:1/-1;color:var(--muted)}
+
+/* responsive */
+@media (max-width:1080px){
+  .g5{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .zones{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:920px){
+  .nav a:not(.cta){display:none}
+  .hero .wrap,.split,.contact-grid,.flow-card,.pledge,footer .wrap{grid-template-columns:1fr}
+  .g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g2{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .top .wrap{height:68px}
+  .brand img{height:30px}
+  .g4,.g3,.g5,.zones,.form{grid-template-columns:1fr}
+  .chain-row{grid-template-columns:1fr;gap:8px}
+  .tbl thead{display:none}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:auto}
+  .tbl tr{padding:16px 20px;border-top:1px solid var(--line)}
+  .tbl tr:first-child{border-top:0}
+  .tbl td{border:0;padding:2px 0}
+  .tbl td:first-child{white-space:normal;margin-bottom:6px}
+  .tbl td[data-label]::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--muted);font-weight:600}
+  .tbl td[data-label] + td[data-label]{margin-top:8px}
+  .tabs{display:flex;width:100%}
+  .tabs button{flex:1;padding:10px 8px}
+  .chip-float{left:12px;bottom:12px;font-size:.8125rem;padding:9px 13px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero .photo{animation:none}
+  .btn,.nav a{transition:none}
+}
+
+/* language toggle + mobile menu */
+.top{position:sticky}
+.top-actions{display:flex;align-items:center;gap:8px}
+.lang{display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:38px;padding:0 12px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;font-size:.8125rem;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--ink-2)}
+.lang:hover{background:var(--tint)}
+.m-cta{display:none}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;
+  align-items:center;justify-content:center;color:var(--ink)}
+.menu-btn .x{display:none}
+.menu-btn[aria-expanded="true"] .bars{display:none}
+.menu-btn[aria-expanded="true"] .x{display:block}
+.mnav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 40px rgba(11,46,34,.10);
+  padding:6px var(--pad) 22px;max-height:calc(100vh - 68px);overflow:auto}
+.mnav[hidden]{display:none}
+.mnav a.item{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);
+  font-size:1.0625rem;font-weight:700;text-decoration:none;color:var(--ink)}
+.mnav a.item::after{content:"";width:8px;height:8px;border-right:2px solid #A9BDB2;border-top:2px solid #A9BDB2;transform:rotate(45deg)}
+.mnav .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.mnav .row .btn{min-height:50px;font-size:.9375rem}
+@media (max-width:920px){
+  .nav{display:none}
+  .menu-btn{display:inline-flex}
+  .m-cta{display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:999px;background:var(--ink);color:#fff;font-size:.875rem;font-weight:700;text-decoration:none}
+}
+@media (max-width:380px){ .m-cta{display:none} }
+body.menu-open{overflow:hidden}
+html[lang="en"] h1{letter-spacing:-.045em}
+html[lang="en"] h2{letter-spacing:-.04em}
+html[lang="en"] body,html[lang="en"]{word-break:normal}
+
+h1,h2{text-wrap:balance}
+html[lang="en"] .hero h1{font-size:clamp(2.5rem,1.3rem + 3.5vw,4.5rem)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="SOLAUM home"><img src="../img/solaum-logo.png" width="416" height="152" alt="SOLAUM"></a>
+    <nav class="nav" aria-label="Main menu"><a href="#why" data-nav="why">Problem</a><a href="#chamber" data-nav="chamber">Chamber</a><a href="#tech" data-nav="tech">Technology</a><a href="#farm" data-nav="farm">First Site</a><a href="#scale" data-nav="scale">Scale</a><a href="#roadmap" data-nav="roadmap">Roadmap</a><a class="cta" href="#contact" data-nav="contact">Contact</a></nav>
+    <div class="top-actions">
+      <a class="lang" href="../" hreflang="ko" lang="ko" aria-label="한국어 버전">KO</a>
+      <a class="m-cta" href="#contact">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><svg class="bars" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="x" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="mnav" id="mnav" hidden>
+      <nav aria-label="Main menu"><a class="item" href="#why">Problem</a><a class="item" href="#chamber">Chamber</a><a class="item" href="#tech">Technology</a><a class="item" href="#farm">First Site</a><a class="item" href="#scale">Scale</a><a class="item" href="#roadmap">Roadmap</a></nav>
+      <div class="row"><a class="btn primary" href="#contact">Contact</a><a class="btn light" href="../" hreflang="ko" lang="ko">한국어</a></div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">AI bio chambers for urban micro farms</p>
+      <h1 id="hero-h">Turning Empty Storefronts into City Farms.</h1>
+      <p class="lead">SOLAUM grows fresh vegetables in refrigerator-sized AI bio chambers placed in vacant urban spaces, and supplies them right where they are grown.</p>
+      <div class="btns"><a class="btn primary" href="#chamber">Explore the chamber</a><a class="btn light" href="#farm">See our first site</a></div>
+      <dl class="hero-stats"><div><dt>Footprint per chamber</dt><dd>2.4 m²</dd></div><div><dt>Core technology</dt><dd>Patent-pending mirrors</dd></div><div><dt>First site</dt><dd>Daegu, Korea</dd></div></dl>
+    </div>
+    <div class="hero-media">
+      <div class="photo">
+        <img src="../img/farm-aisle.webp" srcset="../img/farm-aisle-800.webp 800w, ../img/farm-aisle.webp 1586w" sizes="(max-width: 920px) 100vw, 640px" width="1586" height="992" alt="An indoor farm aisle lined with SOLAUM chambers on both sides, with a worker checking a chamber (concept rendering)" loading="eager" decoding="async" fetchpriority="high">
+        <span class="tag-render">Concept rendering</span>
+        <span class="chip-float"><i class="dot"></i>SOLAUM indoor farm</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="why" data-nav="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="why-h">Vegetables Feel the Weather First.</h2><p class="lead">Korea is losing farmers and farmland while heatwaves grow longer, and half of what consumers pay for produce goes to distribution. Meanwhile, storefronts across its cities sit empty.</p></div>
+    <div class="grid g4"><article class="card stat"><div class="num">12.4<small>%</small></div><h3>Rise in vegetable prices in one month</h3><p>Korea's consumer prices for vegetables rose 12.4% from July to August 2026, with lettuce up 28.4% and spinach up 68.2%.</p></article><article class="card stat"><div class="num">49.2<small>%</small></div><h3>Share of retail price spent on distribution</h3><p>The 2023 average for Korean farm produce. For leafy and root vegetables such as napa cabbage and radish, it reaches 64.3%.</p></article><article class="card stat"><div class="num">14.7<small>%</small></div><h3>Vacancy in mid-to-large retail space</h3><p>Nationwide in Q3 2026. In Daegu, our first site, it is 19.6%, 4.9 points above the national rate.</p></article><article class="card stat"><div class="num">51.0<small>%</small></div><h3>Farm population aged 65 or older</h3><p>More than half of Korea's farming and fishing population was 65 or older in 2025, straining labor-intensive vegetable production.</p></article></div>
+    <p class="src small">Sources: Consumer Price Trends (Aug 2026), Agricultural Distribution Survey (2023), Commercial Real Estate Rental Trends (Q3 2026), Census of Agriculture, Forestry and Fisheries (2025)</p>
+  </div>
+</section>
+
+<section class="sec tint" id="chamber" data-nav="chamber" aria-labelledby="chamber-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="chamber-h">One Chamber,<br>Every Condition.</h2><p class="lead">Inside a refrigerator-style cabinet with a 2.4 m² footprint, a PLC and AI manage light, nutrient solution and air together, creating the right conditions for each crop whatever the weather outside.</p></div>
+    <div class="photo"><img src="../img/chamber-detail-en.webp" srcset="../img/chamber-detail-en-800.webp 800w, ../img/chamber-detail-en.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="Close-up of a SOLAUM AI bio chamber with labels for the status display, per-tier LED lighting, reflective mirror walls, multi-tier growing, PLC control panel and nutrient supply, and floor status light (concept rendering)" loading="lazy" decoding="async"><span class="tag-render">Concept rendering</span></div>
+    <div class="card specbar row-gap"><dl><div><dt>Size</dt><dd>1.2 × 0.8 × 2.1 m</dd></div><div><dt>Footprint</dt><dd>2.4 m²</dd></div><div><dt>Lighting</dt><dd>LED 240–360 W</dd></div><div><dt>Target PPFD</dt><dd>200–300 µmol/m²/s</dd></div><div><dt>Growing method</dt><dd>Multi-tier recirculating hydroponics</dd></div><div><dt>Control</dt><dd>PLC + edge AI</dd></div></dl><p class="small muted">Reference specifications, to be finalized after prototype trials.</p></div>
+    <div class="grid g5 row-gap"><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="3" rx="1.5"/><path d="M7 11v2M12 11v3M17 11v2M9 18h6"/></svg></div><h4>Per-tier LED lighting</h4><p>Adjusts light intensity and spectrum directly above the crops on every tier.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l5 6M20 4l-5 6"/><path d="M12 6v12M8 18h8"/><path d="M9 10l3 3 3-3"/></svg></div><h4>Reflective mirror walls</h4><p>Redirect light that would escape to the walls back onto the crops. Patent pending.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M4 9h16M4 15h16"/></svg></div><h4>Multi-tier growing</h4><p>Tiers are split by growth stage, using height to make the most of a small footprint.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M10 12h4"/></svg></div><h4>Drawer-type nutrient module</h4><p>Slides in and out by its handle, making harvests and solution changes easy.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M7 13l3-3 3 2 4-4M9 20h6"/></svg></div><h4>Status display and remote view</h4><p>Temperature, humidity and CO₂ on the front panel and on your phone.</p></article></div>
+  </div>
+</section>
+
+<section class="sec glow" id="tech" data-nav="tech" aria-labelledby="tech-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="tech-h">Light, Reflected.</h2><p class="lead">With LEDs only overhead, leaves shade one another as crops grow, so edge plants and lower leaves fall behind. SOLAUM chambers place mirrors around each LED to return stray light to the crops, and adjust the mirrors' tilt and curvature to match plant height.</p></div>
+    <div class="grid g3 compare">
+      <figure class="card"><svg viewBox="0 0 320 180" role="img" aria-label="Overhead LED only: the edge lettuce is shaded" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="cone2n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
+<rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
+<polygon points="118,30 202,30 236,152 84,152" fill="url(#cone2n)"/>
+<path d="M145 32 L128 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175 32 L192 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M124 32 L102 132" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M196 32 L218 132" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 32 L18 70" stroke="#F07BBD" stroke-width="1.2" stroke-dasharray="3 4" opacity=".5" fill="none"/>
+<path d="M200 32 L302 70" stroke="#F07BBD" stroke-width="1.2" stroke-dasharray="3 4" opacity=".5" fill="none"/>
+<rect x="110" y="22" width="100" height="8" rx="4" fill="#FCE6F2"/>
+
+<symbol id="lcone2n" viewBox="-32 -34 64 36" overflow="visible">
+  <ellipse cx="-17" cy="-7" rx="15" ry="7.5" transform="rotate(-22 -17 -7)" fill="#5C9C45"/>
+  <ellipse cx="17" cy="-7" rx="15" ry="7.5" transform="rotate(22 17 -7)" fill="#5C9C45"/>
+  <ellipse cx="-9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
+  <ellipse cx="9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
+  <ellipse cx="0" cy="-20" rx="10.5" ry="12" fill="#A3D47B"/>
+  <path d="M0 -5 C 1 -12, -1 -20, 0 -28" stroke="#5C9C45" stroke-width="1.2" fill="none"/>
+</symbol>
+<symbol id="ldcone2n" viewBox="-32 -34 64 36" overflow="visible">
+  <ellipse cx="-17" cy="-7" rx="13" ry="6.5" transform="rotate(-22 -17 -7)" fill="#3E5C38"/>
+  <ellipse cx="17" cy="-7" rx="13" ry="6.5" transform="rotate(22 17 -7)" fill="#3E5C38"/>
+  <ellipse cx="-8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
+  <ellipse cx="8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
+  <ellipse cx="0" cy="-17" rx="9" ry="10" fill="#668C52"/>
+</symbol>
+
+<use href="#ldcone2n" x="18.0" y="114.0" width="68" height="38"/>
+<use href="#lcone2n" x="90.0" y="114.0" width="68" height="38"/>
+<use href="#lcone2n" x="162.0" y="114.0" width="68" height="38"/>
+<use href="#ldcone2n" x="234.0" y="114.0" width="68" height="38"/>
+<rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
+</svg><figcaption><b>Overhead LED only</b><span>Light concentrates in the center and edge plants are shaded.</span></figcaption></figure>
+      <figure class="card"><svg viewBox="0 0 320 180" role="img" aria-label="With reflective mirrors: light reaches the edge lettuce" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="cone2m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
+<rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
+<polygon points="118,30 202,30 300,152 20,152" fill="url(#cone2m)"/>
+<line x1="14" y1="18" x2="50" y2="58" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
+<line x1="306" y1="18" x2="270" y2="58" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
+<path d="M145 32 L128 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175 32 L192 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M124 32 L30 34 L62 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M196 32 L290 34 L258 128" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M132 32 L40 46 L82 132" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M188 32 L280 46 L238 132" stroke="#F07BBD" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="110" y="22" width="100" height="8" rx="4" fill="#FCE6F2"/>
+
+<symbol id="lcone2m" viewBox="-32 -34 64 36" overflow="visible">
+  <ellipse cx="-17" cy="-7" rx="15" ry="7.5" transform="rotate(-22 -17 -7)" fill="#5C9C45"/>
+  <ellipse cx="17" cy="-7" rx="15" ry="7.5" transform="rotate(22 17 -7)" fill="#5C9C45"/>
+  <ellipse cx="-9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
+  <ellipse cx="9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
+  <ellipse cx="0" cy="-20" rx="10.5" ry="12" fill="#A3D47B"/>
+  <path d="M0 -5 C 1 -12, -1 -20, 0 -28" stroke="#5C9C45" stroke-width="1.2" fill="none"/>
+</symbol>
+<symbol id="ldcone2m" viewBox="-32 -34 64 36" overflow="visible">
+  <ellipse cx="-17" cy="-7" rx="13" ry="6.5" transform="rotate(-22 -17 -7)" fill="#3E5C38"/>
+  <ellipse cx="17" cy="-7" rx="13" ry="6.5" transform="rotate(22 17 -7)" fill="#3E5C38"/>
+  <ellipse cx="-8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
+  <ellipse cx="8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
+  <ellipse cx="0" cy="-17" rx="9" ry="10" fill="#668C52"/>
+</symbol>
+
+<use href="#lcone2m" x="18.0" y="114.0" width="68" height="38"/>
+<use href="#lcone2m" x="90.0" y="114.0" width="68" height="38"/>
+<use href="#lcone2m" x="162.0" y="114.0" width="68" height="38"/>
+<use href="#lcone2m" x="234.0" y="114.0" width="68" height="38"/>
+<rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
+</svg><figcaption><b>With reflective mirrors</b><span>Light that escaped to the walls reaches the edge plants.</span></figcaption></figure>
+      <div class="card patent"><h3>Patent pending</h3><dl><dt>Title</dt><dd>AI-powered indoor LED plant grower</dd><dt>Filed</dt><dd>July 2026, examination requested</dd><dt>International filing</dt><dd>PCT priority deadline July 2027</dd></dl><p>Research shows that bringing lights closer to crops and lining grow compartments with reflective curtains improves energy-use efficiency (Frontiers in Plant Science, 2023).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint" id="ai" data-nav="tech" aria-labelledby="ai-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="ai-h">Sensed by PLC.<br>Decided by AI.</h2><p class="lead">An edge AI on every chamber forecasts the next 24 hours of conditions and harvest weight, then sets the targets. The PLC handles real-time control and safety shutdowns, and falls back to a safe recipe if communication is lost.</p></div>
+    <div class="split top">
+      <figure style="margin:0">
+        <div class="photo"><img src="../img/control-room.webp" srcset="../img/control-room-800.webp 800w, ../img/control-room.webp 1586w" sizes="(max-width: 920px) 100vw, 740px" width="1586" height="992" alt="SOLAUM AI growing control room, with a large screen showing each chamber's temperature and humidity and a 24-hour forecast (concept rendering)" loading="lazy" decoding="async"><span class="tag-render">Concept rendering</span></div>
+        <figcaption class="cap">Concept for the AI control room. Figures on screen are illustrative.</figcaption>
+      </figure>
+      <div class="card raised"><h3 style="margin-bottom:20px">Control architecture</h3><div class="layers" role="group" aria-label="Control architecture: edge AI, PLC, sensors and actuators"><div class="layer ai"><b>Edge AI</b><span>Forecasts environment and growth, sets per-crop targets, sends alerts</span></div><div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> Setpoints</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> Readings and logs</span></div><div class="layer plc"><b>PLC</b><span>Real-time control and instant shutdown on overheating, leaks or power loss. The AI cannot change safety logic.</span></div><div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> Commands</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> Sensor values</span></div><div class="layer"><b>Sensors and actuators</b><span>Light, CO₂, temperature, humidity, EC, pH / LEDs, fans, nutrient pumps, valves</span></div></div></div>
+    </div>
+    <div class="card table-card row-gap">
+      <div style="padding:clamp(24px,2.6vw,34px) clamp(24px,2.6vw,34px) 18px"><h3 style="margin-bottom:8px">Nutrient-tuned growing recipes</h3><p class="muted small">The same lettuce develops different nutrient levels under different solutions and light. We start by validating recipes already supported by published research.</p></div>
+      <table class="tbl"><thead><tr><th scope="col">Product</th><th scope="col">Method</th><th scope="col">Evidence</th><th scope="col">Status</th></tr></thead><tbody><tr><td>Low-potassium lettuce</td><td data-label="Method">Lower potassium in the nutrient solution two weeks before harvest</td><td data-label="Evidence">Leaf potassium significantly lower than control (Andong National University, 2018)</td><td data-label="Status"><span class="pill plan">Trial 2027</span></td></tr><tr><td>High-anthocyanin lettuce</td><td data-label="Method">Mixed red and blue light</td><td data-label="Evidence">4.1× the anthocyanin of red light alone (National Institute of Horticultural and Herbal Science, 2010)</td><td data-label="Status"><span class="pill plan">Trial 2027</span></td></tr><tr><td>Vitamin C–enhanced lettuce</td><td data-label="Method">Supplemental UV-A and photoperiod control</td><td data-label="Evidence">Ascorbic acid content varies with photoperiod (Jeonbuk National University, 2016)</td><td data-label="Status"><span class="pill plan">Under review</span></td></tr></tbody></table>
+    </div>
+    <p class="note">As general foods, these products make no claim to prevent or treat disease, and will follow nutrient labeling standards when commercialized.</p>
+  </div>
+</section>
+
+<section class="sec glow" id="farm" data-nav="farm" aria-labelledby="farm-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="farm-h">First Site:<br>Daegu Micro Farm</h2><p class="lead">Our first site is planned for a storefront in Daegu in Q4 2027. Vegetables grown in the chambers are harvested, packed and sold on the spot, and the site also hosts tours and collects trial data.</p></div>
+    <div class="tabs" role="tablist" aria-label="First site concept views"><button role="tab" id="tab-0" aria-controls="farm-panel" aria-selected="true" tabindex="0" data-img="microfarm-aerial-labeled-en" data-alt="Aerial view of the first Daegu micro farm, labeled with the brand moss wall, AI bio chamber zone, PLC panels and nutrient supply, seedling racks and R&D bench, harvest-packing-shipping area, AI control room, lounge and tour route, and daylight windows (concept rendering)">Aerial</button><button role="tab" id="tab-1" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-plan-en" data-alt="Top-down floor plan of the first Daegu micro farm (concept rendering)">Floor plan</button><button role="tab" id="tab-2" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-aerial" data-alt="Overview of the first Daegu micro farm showing chamber rows, work areas and the control room (concept rendering)">Overview</button></div>
+    <figure style="margin:0" id="farm-panel" role="tabpanel" aria-labelledby="tab-0">
+      <div class="photo">
+        <img id="farm-img" src="../img/microfarm-aerial-labeled-en.webp" srcset="../img/microfarm-aerial-labeled-en-800.webp 800w, ../img/microfarm-aerial-labeled-en.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="Aerial view of the first Daegu micro farm, labeled with the brand moss wall, AI bio chamber zone, PLC panels and nutrient supply, seedling racks and R&D bench, harvest-packing-shipping area, AI control room, lounge and tour route, and daylight windows (concept rendering)" loading="lazy" decoding="async">
+        <span class="tag-render">Concept rendering</span>
+      </div>
+      <figcaption class="cap">Concept rendering of the first site. Final layout and chamber count will depend on the location.</figcaption>
+    </figure>
+    <div class="zones"><div class="zone"><i class="dot"></i><div><b>AI bio chamber zone</b><span>24 units in the concept, run by growth stage</span></div></div><div class="zone"><i class="dot"></i><div><b>PLC panels and nutrient supply</b><span>A control panel and nutrient line for each row</span></div></div><div class="zone"><i class="dot"></i><div><b>Seedling racks and R&amp;D bench</b><span>Raising seedlings and testing recipes</span></div></div><div class="zone"><i class="dot"></i><div><b>Harvest, packing, shipping</b><span>Packed on harvest day for the store and B2B</span></div></div><div class="zone"><i class="dot"></i><div><b>AI control room</b><span>Every chamber's status and forecast on one screen</span></div></div><div class="zone"><i class="dot"></i><div><b>Lounge and tour route</b><span>A route for visitors and institutional tours</span></div></div><div class="zone"><i class="dot"></i><div><b>Brand moss wall</b><span>A living moss wall inside the store</span></div></div><div class="zone"><i class="dot"></i><div><b>Daylight windows</b><span>Window planters and an open storefront</span></div></div></div>
+    <div class="card flow-card">
+      <div><h3>Distribution in one step</h3><p>For leafy and root vegetables, 64.3% of what consumers pay goes to distribution (2023). SOLAUM grows and sells in the same store. Actual costs and margins will be measured and published in the 2027 trials.</p></div>
+      <div>
+        <div class="chain-row"><b>Conventional</b><ol class="chain"><li><span>Farm</span></li><li><span>Collection</span></li><li><span>Wholesale market</span></li><li><span>Middlemen, retail</span></li><li><span>Consumer</span></li></ol></div>
+        <div class="chain-row"><b>SOLAUM</b><ol class="chain ours"><li><span>Chamber in the store</span></li><li><span>Consumer</span></li></ol></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint" id="scale" data-nav="scale" aria-labelledby="scale-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="scale-h">One Module,<br>Many Spaces.</h2><p class="lead">Each chamber is a 2.4 m² module, so capacity grows with the number of units. The same control system runs everything from a single vacant office to a warehouse.</p></div>
+    <div class="grid g2"><article class="card space"><div class="photo"><img src="../img/scale-office.webp" srcset="../img/scale-office-800.webp 800w, ../img/scale-office.webp 1670w" sizes="(max-width: 920px) 100vw, 590px" width="1670" height="942" alt="Rows of SOLAUM chambers installed in a vacant office (concept rendering)" loading="lazy" decoding="async"><span class="tag-render">Concept rendering</span></div><div class="body"><h3>Urban storefronts and vacant offices</h3><p>Rows of chambers in vacant space produce food close to restaurants, cafés and institutional kitchens.</p><div class="tags"><span>In-store sales</span><span>Restaurant and café supply</span><span>Hospital and care-home meals</span></div></div></article><article class="card space"><div class="photo"><img src="../img/scale-warehouse.webp" srcset="../img/scale-warehouse-800.webp 800w, ../img/scale-warehouse.webp 1672w" sizes="(max-width: 920px) 100vw, 590px" width="1672" height="941" alt="SOLAUM chambers on two levels of a warehouse mezzanine (concept rendering)" loading="lazy" decoding="async"><span class="tag-render">Concept rendering</span></div><div class="body"><h3>Warehouses and large facilities</h3><p>Chambers stacked on mezzanine structures produce B2B volumes, run by the same AI control system.</p><div class="tags"><span>Bulk B2B supply</span><span>AI operations subscription</span><span>Growing data</span></div></div></article></div>
+    <div class="grid g2 who"><div class="card"><h4>Research and education institutions, small growers</h4><p>Adopt a 2.4 m² chamber with an AI operations service covering remote monitoring, recipe updates and growth forecasts.</p></div><div class="card"><h4>Public agencies and local governments</h4><p>Validate vacant storefronts and unused school buildings as trial sites together, and share on-site growing data.</p></div></div>
+  </div>
+</section>
+
+<section class="sec" id="roadmap" data-nav="roadmap" aria-labelledby="roadmap-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="roadmap-h">Roadmap to 2027</h2><p class="lead">The patent application, the company and the control software are in place. After validating performance in 2027 lettuce trials, we will open our first storefront micro farm in Daegu.</p></div>
+    <div class="grid g4"><article class="card phase done"><p class="label">Phase 1</p><p class="when">2026</p><h3>Foundation</h3><ul><li>Patent filed for the reflective-mirror AI grower, examination requested (Jul)</li><li>First version of the edge AI control software, passed PLC simulator tests (Oct)</li><li>SOLAUM Co., Ltd. incorporated, headquartered in Daegu (Nov)</li></ul><span class="pill done">Done</span></article><article class="card phase"><p class="label">Phase 2</p><p class="when">2027</p><h3>Lettuce trials</h3><ul><li>Build prototype chambers</li><li>Compare against control chambers with the same variety and conditions</li><li>Validate low-potassium and high-anthocyanin recipes</li></ul><span class="pill plan">Planned</span></article><article class="card phase"><p class="label">Phase 3</p><p class="when">2027</p><h3>International patent and certification</h3><ul><li>PCT international application (priority deadline Jul 2027)</li><li>Pursue Korean national standard (KS) testing for smart-farm ICT equipment</li></ul><span class="pill plan">Planned</span></article><article class="card phase"><p class="label">Phase 4</p><p class="when">Q4 2027</p><h3>First site in Daegu</h3><ul><li>Open the storefront micro farm</li><li>Begin same-day sales and B2B supply</li></ul><span class="pill plan">Planned</span></article></div>
+    <div class="card pledge"><h3>We will publish measured performance</h3><p>Published figures put vertical-farm lettuce at 10–18 kWh per kg. In the 2027 trials, SOLAUM will measure and publish energy per kg, marketable yield and labor time against control chambers growing the same variety under the same conditions.</p></div>
+  </div>
+</section>
+
+<section class="vision" aria-labelledby="vision-h">
+  <div class="wrap"><h2 id="vision-h">Fresh Food,<br>Grown Where People Live.</h2><p>We grow fresh vegetables year-round, on plan, inside the cities where people live, free from the swings of weather and long supply chains. The model we prove in Daegu will expand to old downtowns and unused school buildings across Korea.</p></div>
+</section>
+
+<section class="sec glow" id="contact" data-nav="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-dark">
+        <h2 id="contact-h">Let's pilot city farms in vacant spaces together.</h2>
+        <p>We welcome inquiries about vegetable supply, chamber adoption, pilots in public vacant spaces, and investment.</p>
+        <div class="c-type"><b>Vegetable supply</b><span>Custom vegetables for restaurants, cafés, hospitals and care-home kitchens</span></div><div class="c-type"><b>Chamber adoption</b><span>Chambers and AI operations service for research and education institutions and small growers</span></div><div class="c-type"><b>Pilots and investment</b><span>Public vacant-space pilots, joint government R&amp;D, seed investment</span></div>
+        <p class="c-meta">Email <a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a><br>Phone <a href="tel:+82533829789">+82-53-382-9789</a><br>161 Geomdan-ro, Buk-gu, Daegu, Republic of Korea</p>
+      </div>
+      <form class="card raised form" id="inquiry" novalidate>
+        <h3>Partnership inquiry</h3>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Your name"></div>
+        <div class="field"><label for="f-org">Organization</label><input id="f-org" name="org" autocomplete="organization" placeholder="Company or institution"></div>
+        <div class="field"><label for="f-email">Reply email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+        <div class="field"><label for="f-topic">Topic</label><select id="f-topic" name="topic"><option>Vegetable supply</option><option>Chamber adoption</option><option>Pilots and investment</option><option>Other</option></select></div>
+        <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Tell us the produce and volumes you need, the space you have in mind, or how you would like to work together."></textarea></div>
+        <div class="form-foot"><button class="btn primary" type="submit">Compose email</button><small>Opens your email app with what you entered. Nothing is stored on this page.</small></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#main" aria-label="SOLAUM home"><img src="../img/solaum-logo.png" width="416" height="152" alt="SOLAUM" loading="lazy"></a>
+      <dl><dt>Company</dt><dd>SOLAUM Co., Ltd.</dd><dt>CEO</dt><dd>Jongmoo Ryu</dd><dt>Business reg. no.</dt><dd>335-87-03961</dd><dt>Address</dt><dd>161 Geomdan-ro, Buk-gu, Daegu, Republic of Korea</dd><dt>Email</dt><dd><a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a></dd></dl>
+    </div>
+    <div>
+      <details><summary>Statistics and research sources</summary><ul><li>Vegetable consumer prices: Consumer Price Trends, August 2026</li><li>Distribution cost share: Agricultural Distribution Survey, 2023</li><li>Retail vacancy: Commercial Real Estate Rental Trends, Q3 2026</li><li>Farm population aging: Census of Agriculture, Forestry and Fisheries, 2025</li><li>Vertical-farm energy use: arXiv 2603.15806</li><li>Reflective curtains and close lighting: Frontiers in Plant Science, 2023</li><li>Recipe evidence: Andong National University (2018), National Institute of Horticultural and Herbal Science (2010), Jeonbuk National University (2016)</li></ul></details>
+      <p class="small muted" style="margin-top:18px">Facility and chamber images on this site are concept renderings at the planning stage.</p>
+      <p class="small" style="margin-top:12px"><a class="lang" href="../" hreflang="ko" lang="ko" aria-label="한국어 버전">KO</a></p>
+    </div>
+    <p class="copy">© 2026 SOLAUM Co., Ltd.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var L={"open": "Open menu", "close": "Close menu", "prefix": "../", "subject": "[SOLAUM] {topic} inquiry", "labels": ["Name", "Organization", "Reply email", "Topic"], "email": "info@solaum.co.kr"};
+  // scrollspy
+  var links={}; document.querySelectorAll('.nav a[data-nav]').forEach(function(a){links[a.dataset.nav]=a;});
+  var cur=null;
+  function setActive(k){ if(k===cur) return; cur=k; Object.keys(links).forEach(function(x){ var on=x===k; links[x].classList.toggle('active',on); if(on){links[x].setAttribute('aria-current','true');}else{links[x].removeAttribute('aria-current');} }); }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) setActive(e.target.dataset.nav||null); }); },{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('[data-nav]:not(a)').forEach(function(s){ io.observe(s); });
+  }
+  // mobile menu
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('mnav');
+  function setMenu(open){ btn.setAttribute('aria-expanded', open?'true':'false'); btn.setAttribute('aria-label', open?L.close:L.open);
+    menu.hidden=!open; document.body.classList.toggle('menu-open',open); }
+  btn.addEventListener('click',function(){ setMenu(menu.hidden); });
+  menu.addEventListener('click',function(e){ var a=e.target.closest('a'); if(!a) return;
+    var h=a.getAttribute('href'); setMenu(false);
+    if(h && h.charAt(0)==='#'){ var el=document.querySelector(h); if(el){ e.preventDefault();
+      var smooth=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      requestAnimationFrame(function(){ el.scrollIntoView({behavior:smooth?'smooth':'auto',block:'start'}); history.pushState(null,'',h); }); } } });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !menu.hidden){ setMenu(false); btn.focus(); } });
+  window.matchMedia('(min-width: 921px)').addEventListener('change',function(m){ if(m.matches) setMenu(false); });
+  // tabs
+  var tabs=document.querySelectorAll('.tabs [role=tab]'), img=document.getElementById('farm-img'), P=L.prefix;
+  tabs.forEach(function(t){ t.addEventListener('click',function(){
+    tabs.forEach(function(o){ o.setAttribute('aria-selected', o===t?'true':'false'); o.tabIndex=o===t?0:-1; });
+    img.src=P+'img/'+t.dataset.img+'.webp'; img.srcset=P+'img/'+t.dataset.img+'-800.webp 800w, '+P+'img/'+t.dataset.img+'.webp 1586w'; img.alt=t.dataset.alt;
+    document.getElementById('farm-panel').setAttribute('aria-labelledby', t.id);
+  }); });
+  var tl=document.querySelector('.tabs');
+  tl && tl.addEventListener('keydown',function(e){ var a=[].slice.call(tabs), i=a.indexOf(document.activeElement); if(i<0) return;
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); var n=a[(i+(e.key==='ArrowRight'?1:a.length-1))%a.length]; n.focus(); n.click(); } });
+  // inquiry form -> mail draft
+  var f=document.getElementById('inquiry');
+  f && f.addEventListener('submit',function(e){ e.preventDefault();
+    var v=function(n){ return (f.elements[n].value||'').trim(); };
+    var subject=L.subject.replace('{topic}', v('topic'))+(v('org')?' - '+v('org'):'');
+    var body=L.labels[0]+': '+v('name')+'\n'+L.labels[1]+': '+v('org')+'\n'+L.labels[2]+': '+v('email')+'\n'+L.labels[3]+': '+v('topic')+'\n\n'+v('message');
+    window.location.href='mailto:'+L.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

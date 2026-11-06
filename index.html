@@ -6,6 +6,9 @@
 <title>솔라움 SOLAUM | 빈 상가를 도시의 농장으로, AI 바이오 챔버</title>
 <meta name="description" content="솔라움은 냉장고 크기의 AI 바이오 챔버로 도시의 빈 상가와 유휴 공간에서 신선 채소를 기르고, 기른 자리에서 바로 공급합니다. 반사 미러 재배기 특허 출원, 대구 상가 마이크로팜 1호점 준비 중.">
 <link rel="canonical" href="https://www.solaum.co.kr/">
+<link rel="alternate" hreflang="ko" href="https://www.solaum.co.kr/">
+<link rel="alternate" hreflang="en" href="https://www.solaum.co.kr/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.solaum.co.kr/">
 <meta name="theme-color" content="#0B2E22">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
@@ -61,7 +64,7 @@ p{margin:0}
   backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
 .brand img{height:42px;width:auto}
-.nav{display:flex;align-items:center;gap:4px}
+.nav{display:flex;align-items:center;gap:4px;margin-left:auto}
 .nav a{text-decoration:none;font-size:.9375rem;font-weight:600;color:var(--ink-2);padding:9px 16px;border-radius:999px;transition:background .2s,color .2s,box-shadow .2s}
 .nav a:hover{background:var(--tint)}
 .nav a.active{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(19,138,72,.28)}
@@ -90,7 +93,7 @@ p{margin:0}
 .hero-stats dd{margin:2px 0 0;font-size:1.25rem;font-weight:700;letter-spacing:-.03em}
 .hero-media{position:relative}
 .photo{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh);background:#E9EFEB;isolation:isolate}
-.photo img{width:100%;aspect-ratio:auto}
+.photo img{width:100%}
 .hero .photo img{aspect-ratio:1/0.86;object-fit:cover;object-position:52% 50%}
 .split.fill .photo{height:100%}
 .split.fill .photo img{height:100%;object-fit:cover}
@@ -304,6 +307,40 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
   .hero .photo{animation:none}
   .btn,.nav a{transition:none}
 }
+
+/* language toggle + mobile menu */
+.top{position:sticky}
+.top-actions{display:flex;align-items:center;gap:8px}
+.lang{display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:38px;padding:0 12px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;font-size:.8125rem;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--ink-2)}
+.lang:hover{background:var(--tint)}
+.m-cta{display:none}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;
+  align-items:center;justify-content:center;color:var(--ink)}
+.menu-btn .x{display:none}
+.menu-btn[aria-expanded="true"] .bars{display:none}
+.menu-btn[aria-expanded="true"] .x{display:block}
+.mnav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 40px rgba(11,46,34,.10);
+  padding:6px var(--pad) 22px;max-height:calc(100vh - 68px);overflow:auto}
+.mnav[hidden]{display:none}
+.mnav a.item{display:flex;justify-content:space-between;align-items:center;padding:16px 4px;border-bottom:1px solid var(--line);
+  font-size:1.0625rem;font-weight:700;text-decoration:none;color:var(--ink)}
+.mnav a.item::after{content:"";width:8px;height:8px;border-right:2px solid #A9BDB2;border-top:2px solid #A9BDB2;transform:rotate(45deg)}
+.mnav .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.mnav .row .btn{min-height:50px;font-size:.9375rem}
+@media (max-width:920px){
+  .nav{display:none}
+  .menu-btn{display:inline-flex}
+  .m-cta{display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:999px;background:var(--ink);color:#fff;font-size:.875rem;font-weight:700;text-decoration:none}
+}
+@media (max-width:380px){ .m-cta{display:none} }
+body.menu-open{overflow:hidden}
+html[lang="en"] h1{letter-spacing:-.045em}
+html[lang="en"] h2{letter-spacing:-.04em}
+html[lang="en"] body,html[lang="en"]{word-break:normal}
+
+h1,h2{text-wrap:balance}
+html[lang="en"] .hero h1{font-size:clamp(2.5rem,1.3rem + 3.5vw,4.5rem)}
 </style>
 </head>
 <body>
@@ -312,35 +349,28 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#main" aria-label="솔라움 처음으로"><img src="img/solaum-logo.png" width="416" height="152" alt="솔라움 SOLAUM"></a>
-    <nav class="nav" aria-label="주요 메뉴">
-      <a href="#why" data-nav="why">문제</a>
-      <a href="#chamber" data-nav="chamber">챔버</a>
-      <a href="#tech" data-nav="tech">기술</a>
-      <a href="#farm" data-nav="farm">1호점</a>
-      <a href="#scale" data-nav="scale">확장</a>
-      <a href="#roadmap" data-nav="roadmap">일정</a>
-      <a class="cta" href="#contact" data-nav="contact">문의</a>
-    </nav>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#why" data-nav="why">문제</a><a href="#chamber" data-nav="chamber">챔버</a><a href="#tech" data-nav="tech">기술</a><a href="#farm" data-nav="farm">1호점</a><a href="#scale" data-nav="scale">확장</a><a href="#roadmap" data-nav="roadmap">일정</a><a class="cta" href="#contact" data-nav="contact">문의</a></nav>
+    <div class="top-actions">
+      <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="m-cta" href="#contact">문의</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="메뉴 열기"><svg class="bars" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="x" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="mnav" id="mnav" hidden>
+      <nav aria-label="주요 메뉴"><a class="item" href="#why">문제</a><a class="item" href="#chamber">챔버</a><a class="item" href="#tech">기술</a><a class="item" href="#farm">1호점</a><a class="item" href="#scale">확장</a><a class="item" href="#roadmap">일정</a></nav>
+      <div class="row"><a class="btn primary" href="#contact">문의</a><a class="btn light" href="en/" hreflang="en" lang="en">English</a></div>
+    </div>
   </div>
 </header>
 
 <main id="main">
-
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap">
     <div>
       <p class="eyebrow">도시형 마이크로팜을 위한 AI 바이오 챔버</p>
       <h1 id="hero-h">빈 상가를<br>도시의 농장으로<br>바꿉니다.</h1>
       <p class="lead">솔라움은 냉장고 크기의 AI 바이오 챔버로 도시의 유휴 공간에서 신선 채소를 기르고, 기른 자리에서 바로 공급합니다.</p>
-      <div class="btns">
-        <a class="btn primary" href="#chamber">챔버 살펴보기</a>
-        <a class="btn light" href="#farm">1호점 구상 보기</a>
-      </div>
-      <dl class="hero-stats">
-        <div><dt>챔버 1대 설치면적</dt><dd>2.4m²</dd></div>
-        <div><dt>핵심 기술</dt><dd>반사 미러 특허 출원</dd></div>
-        <div><dt>첫 실증지</dt><dd>대구광역시</dd></div>
-      </dl>
+      <div class="btns"><a class="btn primary" href="#chamber">챔버 살펴보기</a><a class="btn light" href="#farm">1호점 구상 보기</a></div>
+      <dl class="hero-stats"><div><dt>챔버 1대 설치면적</dt><dd>2.4m²</dd></div><div><dt>핵심 기술</dt><dd>반사 미러 특허 출원</dd></div><div><dt>첫 실증지</dt><dd>대구광역시</dd></div></dl>
     </div>
     <div class="hero-media">
       <div class="photo">
@@ -354,60 +384,26 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 
 <section class="sec" id="why" data-nav="why" aria-labelledby="why-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="why-h">채소는 날씨에 가장 먼저 흔들립니다.</h2>
-      <p class="lead">농업 인력과 농지는 줄고 폭염은 길어지는데, 소비자가 낸 농산물 값의 절반은 유통비용입니다. 그사이 도시에는 빈 점포가 늘고 있습니다.</p>
-    </div>
-    <div class="grid g4">
-      <article class="card stat"><div class="num">12.4<small>%</small></div><h3>한 달 새 오른 채소 값</h3><p>2026년 8월 채소류 소비자물가가 전월보다 12.4% 올랐습니다. 상추 28.4%, 시금치 68.2%.</p></article>
-      <article class="card stat"><div class="num">49.2<small>%</small></div><h3>소비자 가격 중 유통비용</h3><p>2023년 농산물 평균입니다. 배추·무 같은 엽근채소는 64.3%에 이릅니다.</p></article>
-      <article class="card stat"><div class="num">14.7<small>%</small></div><h3>전국 중대형 상가 공실률</h3><p>2026년 3분기 기준입니다. 첫 실증지 대구는 19.6%로 전국보다 4.9%p 높습니다.</p></article>
-      <article class="card stat"><div class="num">51.0<small>%</small></div><h3>65세 이상 농림어가 인구</h3><p>2025년 농림어가 인구의 절반 이상이 65세 이상입니다. 노동집약적 채소 생산이 갈수록 어려워집니다.</p></article>
-    </div>
+    <div class="sec-head"><h2 id="why-h">채소는 날씨에 가장 먼저 흔들립니다.</h2><p class="lead">농업 인력과 농지는 줄고 폭염은 길어지는데, 소비자가 낸 농산물 값의 절반은 유통비용입니다. 그사이 도시에는 빈 점포가 늘고 있습니다.</p></div>
+    <div class="grid g4"><article class="card stat"><div class="num">12.4<small>%</small></div><h3>한 달 새 오른 채소 값</h3><p>2026년 8월 채소류 소비자물가가 전월보다 12.4% 올랐습니다. 상추 28.4%, 시금치 68.2%.</p></article><article class="card stat"><div class="num">49.2<small>%</small></div><h3>소비자 가격 중 유통비용</h3><p>2023년 농산물 평균입니다. 배추·무 같은 엽근채소는 64.3%에 이릅니다.</p></article><article class="card stat"><div class="num">14.7<small>%</small></div><h3>전국 중대형 상가 공실률</h3><p>2026년 3분기 기준입니다. 첫 실증지 대구는 19.6%로 전국보다 4.9%p 높습니다.</p></article><article class="card stat"><div class="num">51.0<small>%</small></div><h3>65세 이상 농림어가 인구</h3><p>2025년 농림어가 인구의 절반 이상이 65세 이상입니다. 노동집약적 채소 생산이 갈수록 어려워집니다.</p></article></div>
     <p class="src small">자료: 2026년 8월 소비자물가동향, 2023년 농산물 유통실태조사, 2026년 3분기 상업용부동산 임대동향, 2025년 농림어업총조사</p>
   </div>
 </section>
 
 <section class="sec tint" id="chamber" data-nav="chamber" aria-labelledby="chamber-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="chamber-h">One Chamber,<br>Every Condition.</h2>
-      <p class="lead">설치면적 2.4m²의 냉장고형 캐비닛 안에서 빛, 양액, 공기를 PLC와 AI가 함께 관리합니다. 날씨와 상관없이 작물마다 맞는 조건을 만듭니다.</p>
-    </div>
-    <div class="photo">
-      <img src="img/chamber-detail.webp" srcset="img/chamber-detail-800.webp 800w, img/chamber-detail.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="솔라움 AI 바이오 챔버 근접 모습. 상태 디스플레이, 단별 LED 광원, 반사 미러 내벽, 다단 재배칸, PLC 제어반과 양액 공급부, 바닥 상태등이 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async">
-      <span class="tag-render">콘셉트 렌더링</span>
-    </div>
-    <div class="card specbar row-gap">
-      <dl>
-        <div><dt>크기</dt><dd>1.2 × 0.8 × 2.1m</dd></div>
-        <div><dt>설치면적</dt><dd>2.4m²</dd></div>
-        <div><dt>조명</dt><dd>LED 240~360W</dd></div>
-        <div><dt>목표 광량</dt><dd>200~300 µmol/m²/s</dd></div>
-        <div><dt>재배 방식</dt><dd>다단 순환식 수경재배</dd></div>
-        <div><dt>제어</dt><dd>PLC + 엣지 AI</dd></div>
-      </dl>
-      <p class="small muted">기준 사양이며 시제품 실증을 거쳐 확정합니다.</p>
-    </div>
-    <div class="grid g5 row-gap">
-      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="3" rx="1.5"/><path d="M7 11v2M12 11v3M17 11v2M9 18h6"/></svg></div><h4>단별 LED 광원</h4><p>단마다 작물 바로 위에서 광량과 빛 색을 조절합니다.</p></article>
-      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l5 6M20 4l-5 6"/><path d="M12 6v12M8 18h8"/><path d="M9 10l3 3 3-3"/></svg></div><h4>반사 미러 내벽</h4><p>벽으로 새는 빛을 작물 쪽으로 되돌립니다. 특허 출원 기술입니다.</p></article>
-      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M4 9h16M4 15h16"/></svg></div><h4>다단 재배</h4><p>생육 단계별로 단을 나눠 좁은 면적을 높이로 씁니다.</p></article>
-      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M10 12h4"/></svg></div><h4>서랍식 양액 모듈</h4><p>손잡이로 넣고 빼는 구조라 수확과 양액 교체가 쉽습니다.</p></article>
-      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M7 13l3-3 3 2 4-4M9 20h6"/></svg></div><h4>상태 표시와 원격 확인</h4><p>온도, 습도, CO₂를 문 앞 화면과 휴대폰으로 확인합니다.</p></article>
-    </div>
+    <div class="sec-head"><h2 id="chamber-h">One Chamber,<br>Every Condition.</h2><p class="lead">설치면적 2.4m²의 냉장고형 캐비닛 안에서 빛, 양액, 공기를 PLC와 AI가 함께 관리합니다. 날씨와 상관없이 작물마다 맞는 조건을 만듭니다.</p></div>
+    <div class="photo"><img src="img/chamber-detail.webp" srcset="img/chamber-detail-800.webp 800w, img/chamber-detail.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="솔라움 AI 바이오 챔버 근접 모습. 상태 디스플레이, 단별 LED 광원, 반사 미러 내벽, 다단 재배칸, PLC 제어반과 양액 공급부, 바닥 상태등이 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
+    <div class="card specbar row-gap"><dl><div><dt>크기</dt><dd>1.2 × 0.8 × 2.1m</dd></div><div><dt>설치면적</dt><dd>2.4m²</dd></div><div><dt>조명</dt><dd>LED 240~360W</dd></div><div><dt>목표 광량</dt><dd>200~300 µmol/m²/s</dd></div><div><dt>재배 방식</dt><dd>다단 순환식 수경재배</dd></div><div><dt>제어</dt><dd>PLC + 엣지 AI</dd></div></dl><p class="small muted">기준 사양이며 시제품 실증을 거쳐 확정합니다.</p></div>
+    <div class="grid g5 row-gap"><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="3" rx="1.5"/><path d="M7 11v2M12 11v3M17 11v2M9 18h6"/></svg></div><h4>단별 LED 광원</h4><p>단마다 작물 바로 위에서 광량과 빛 색을 조절합니다.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l5 6M20 4l-5 6"/><path d="M12 6v12M8 18h8"/><path d="M9 10l3 3 3-3"/></svg></div><h4>반사 미러 내벽</h4><p>벽으로 새는 빛을 작물 쪽으로 되돌립니다. 특허 출원 기술입니다.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M4 9h16M4 15h16"/></svg></div><h4>다단 재배</h4><p>생육 단계별로 단을 나눠 좁은 면적을 높이로 씁니다.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M10 12h4"/></svg></div><h4>서랍식 양액 모듈</h4><p>손잡이로 넣고 빼는 구조라 수확과 양액 교체가 쉽습니다.</p></article><article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M7 13l3-3 3 2 4-4M9 20h6"/></svg></div><h4>상태 표시와 원격 확인</h4><p>온도, 습도, CO₂를 문 앞 화면과 휴대폰으로 확인합니다.</p></article></div>
   </div>
 </section>
 
 <section class="sec glow" id="tech" data-nav="tech" aria-labelledby="tech-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="tech-h">Light, Reflected.</h2>
-      <p class="lead">LED를 위에만 두면 작물이 자랄수록 잎이 빛을 가려 가장자리와 아래 잎이 덜 자랍니다. 솔라움 챔버는 LED 둘레의 거울로 벽에 새던 빛을 작물에 되돌리고, 거울의 경사각과 곡면으로 작물 키에 맞게 반사 범위를 바꿉니다.</p>
-    </div>
+    <div class="sec-head"><h2 id="tech-h">Light, Reflected.</h2><p class="lead">LED를 위에만 두면 작물이 자랄수록 잎이 빛을 가려 가장자리와 아래 잎이 덜 자랍니다. 솔라움 챔버는 LED 둘레의 거울로 벽에 새던 빛을 작물에 되돌리고, 거울의 경사각과 곡면으로 작물 키에 맞게 반사 범위를 바꿉니다.</p></div>
     <div class="grid g3 compare">
-      <figure class="card">
-        <svg viewBox="0 0 320 180" role="img" aria-label="위쪽 LED만 있을 때: 가장자리 상추에 그늘이 짐" xmlns="http://www.w3.org/2000/svg">
+      <figure class="card"><svg viewBox="0 0 320 180" role="img" aria-label="위쪽 LED만 있을 때: 가장자리 상추에 그늘이 짐" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="cone2n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
 <polygon points="118,30 202,30 236,152 84,152" fill="url(#cone2n)"/>
@@ -440,11 +436,8 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 <use href="#lcone2n" x="162.0" y="114.0" width="68" height="38"/>
 <use href="#ldcone2n" x="234.0" y="114.0" width="68" height="38"/>
 <rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
-</svg>
-        <figcaption><b>위쪽 LED만</b><span>빛이 가운데에 몰리고 가장자리 포기에 그늘이 집니다.</span></figcaption>
-      </figure>
-      <figure class="card">
-        <svg viewBox="0 0 320 180" role="img" aria-label="반사 거울이 있을 때: 가장자리 상추까지 빛이 닿음" xmlns="http://www.w3.org/2000/svg">
+</svg><figcaption><b>위쪽 LED만</b><span>빛이 가운데에 몰리고 가장자리 포기에 그늘이 집니다.</span></figcaption></figure>
+      <figure class="card"><svg viewBox="0 0 320 180" role="img" aria-label="반사 거울이 있을 때: 가장자리 상추까지 빛이 닿음" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="cone2m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
 <polygon points="118,30 202,30 300,152 20,152" fill="url(#cone2m)"/>
@@ -479,60 +472,25 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 <use href="#lcone2m" x="162.0" y="114.0" width="68" height="38"/>
 <use href="#lcone2m" x="234.0" y="114.0" width="68" height="38"/>
 <rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
-</svg>
-        <figcaption><b>반사 미러 적용</b><span>벽으로 새던 빛이 가장자리 포기까지 닿습니다.</span></figcaption>
-      </figure>
-      <div class="card patent">
-        <h3>특허 출원</h3>
-        <dl>
-          <dt>발명의 명칭</dt><dd>인공지능을 이용한 실내용 LED 식물 재배기</dd>
-          <dt>출원</dt><dd>2026년 7월, 심사청구 완료</dd>
-          <dt>해외 출원</dt><dd>PCT 우선권 주장 기한 2027년 7월</dd>
-        </dl>
-        <p>조명을 작물 가까이 두고 반사 커튼으로 재배칸을 감싸면 에너지 이용효율이 높아진다는 연구가 있습니다(Frontiers in Plant Science, 2023).</p>
-      </div>
+</svg><figcaption><b>반사 미러 적용</b><span>벽으로 새던 빛이 가장자리 포기까지 닿습니다.</span></figcaption></figure>
+      <div class="card patent"><h3>특허 출원</h3><dl><dt>발명의 명칭</dt><dd>인공지능을 이용한 실내용 LED 식물 재배기</dd><dt>출원</dt><dd>2026년 7월, 심사청구 완료</dd><dt>해외 출원</dt><dd>PCT 우선권 주장 기한 2027년 7월</dd></dl><p>조명을 작물 가까이 두고 반사 커튼으로 재배칸을 감싸면 에너지 이용효율이 높아진다는 연구가 있습니다(Frontiers in Plant Science, 2023).</p></div>
     </div>
   </div>
 </section>
 
 <section class="sec tint" id="ai" data-nav="tech" aria-labelledby="ai-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="ai-h">Sensed by PLC.<br>Decided by AI.</h2>
-      <p class="lead">챔버마다 붙는 엣지 AI가 24시간 환경과 수확 무게를 예측해 설정값을 정하고, 실시간 제어와 안전 차단은 PLC가 맡습니다. 통신이 끊기면 PLC가 안전 레시피로 돌아갑니다.</p>
-    </div>
+    <div class="sec-head"><h2 id="ai-h">Sensed by PLC.<br>Decided by AI.</h2><p class="lead">챔버마다 붙는 엣지 AI가 24시간 환경과 수확 무게를 예측해 설정값을 정하고, 실시간 제어와 안전 차단은 PLC가 맡습니다. 통신이 끊기면 PLC가 안전 레시피로 돌아갑니다.</p></div>
     <div class="split top">
       <figure style="margin:0">
-        <div class="photo">
-          <img src="img/control-room.webp" srcset="img/control-room-800.webp 800w, img/control-room.webp 1586w" sizes="(max-width: 920px) 100vw, 740px" width="1586" height="992" alt="솔라움 AI 재배 관제실. 대형 화면에 챔버별 온습도와 24시간 예측 그래프가 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async">
-          <span class="tag-render">콘셉트 렌더링</span>
-        </div>
+        <div class="photo"><img src="img/control-room.webp" srcset="img/control-room-800.webp 800w, img/control-room.webp 1586w" sizes="(max-width: 920px) 100vw, 740px" width="1586" height="992" alt="솔라움 AI 재배 관제실. 대형 화면에 챔버별 온습도와 24시간 예측 그래프가 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
         <figcaption class="cap">AI 관제 화면 구상입니다. 화면 속 수치는 예시입니다.</figcaption>
       </figure>
-      <div class="card raised">
-        <h3 style="margin-bottom:20px">제어 구조</h3>
-        <div class="layers" role="group" aria-label="제어 구조: 엣지 AI, PLC, 센서와 구동기">
-          <div class="layer ai"><b>엣지 AI</b><span>환경·생육 예측, 작물별 설정값 결정, 이상 알림</span></div>
-          <div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 설정값</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 측정값·운전 기록</span></div>
-          <div class="layer plc"><b>PLC</b><span>실시간 제어, 과열·누수·정전 즉시 차단. 안전 로직은 AI가 바꿀 수 없습니다.</span></div>
-          <div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 구동 명령</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 센서 값</span></div>
-          <div class="layer"><b>센서와 구동기</b><span>광량·CO₂·온습도·EC·pH, LED·팬·양액 펌프·밸브</span></div>
-        </div>
-      </div>
+      <div class="card raised"><h3 style="margin-bottom:20px">제어 구조</h3><div class="layers" role="group" aria-label="제어 구조: 엣지 AI, PLC, 센서와 구동기"><div class="layer ai"><b>엣지 AI</b><span>환경·생육 예측, 작물별 설정값 결정, 이상 알림</span></div><div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 설정값</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 측정값·운전 기록</span></div><div class="layer plc"><b>PLC</b><span>실시간 제어, 과열·누수·정전 즉시 차단. 안전 로직은 AI가 바꿀 수 없습니다.</span></div><div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 구동 명령</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 센서 값</span></div><div class="layer"><b>센서와 구동기</b><span>광량·CO₂·온습도·EC·pH, LED·팬·양액 펌프·밸브</span></div></div></div>
     </div>
     <div class="card table-card row-gap">
-      <div style="padding:clamp(24px,2.6vw,34px) clamp(24px,2.6vw,34px) 18px">
-        <h3 style="margin-bottom:8px">성분을 조절하는 재배 레시피</h3>
-        <p class="muted small">같은 상추라도 양액과 빛을 바꾸면 성분이 달라집니다. 연구로 근거가 확인된 레시피부터 챔버에서 검증합니다.</p>
-      </div>
-      <table class="tbl">
-        <thead><tr><th scope="col">제품</th><th scope="col">조절 방법</th><th scope="col">근거</th><th scope="col">상태</th></tr></thead>
-        <tbody>
-          <tr><td>칼륨을 낮춘 상추</td><td data-label="조절 방법">수확 2주 전 양액의 칼륨 농도를 낮춤</td><td data-label="근거">잎 칼륨 함량이 대조구보다 유의하게 낮음 (안동대, 2018)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr>
-          <tr><td>안토시아닌을 높인 상추</td><td data-label="조절 방법">적색·청색 혼합광으로 빛 색 조절</td><td data-label="근거">적색광 단독 대비 4.1배 (국립원예특작과학원, 2010)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr>
-          <tr><td>비타민C를 높인 상추</td><td data-label="조절 방법">UV-A 보광, 광주기 조절</td><td data-label="근거">광주기에 따라 아스코르빈산 함량 변화 (전북대, 2016)</td><td data-label="상태"><span class="pill plan">검토</span></td></tr>
-        </tbody>
-      </table>
+      <div style="padding:clamp(24px,2.6vw,34px) clamp(24px,2.6vw,34px) 18px"><h3 style="margin-bottom:8px">성분을 조절하는 재배 레시피</h3><p class="muted small">같은 상추라도 양액과 빛을 바꾸면 성분이 달라집니다. 연구로 근거가 확인된 레시피부터 챔버에서 검증합니다.</p></div>
+      <table class="tbl"><thead><tr><th scope="col">제품</th><th scope="col">조절 방법</th><th scope="col">근거</th><th scope="col">상태</th></tr></thead><tbody><tr><td>칼륨을 낮춘 상추</td><td data-label="조절 방법">수확 2주 전 양액의 칼륨 농도를 낮춤</td><td data-label="근거">잎 칼륨 함량이 대조구보다 유의하게 낮음 (안동대, 2018)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr><tr><td>안토시아닌을 높인 상추</td><td data-label="조절 방법">적색·청색 혼합광으로 빛 색 조절</td><td data-label="근거">적색광 단독 대비 4.1배 (국립원예특작과학원, 2010)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr><tr><td>비타민C를 높인 상추</td><td data-label="조절 방법">UV-A 보광, 광주기 조절</td><td data-label="근거">광주기에 따라 아스코르빈산 함량 변화 (전북대, 2016)</td><td data-label="상태"><span class="pill plan">검토</span></td></tr></tbody></table>
     </div>
     <p class="note">일반 식품으로서 질병의 예방이나 치료 효능을 표방하지 않으며, 제품화할 때는 성분 함량 표시 기준을 따릅니다.</p>
   </div>
@@ -540,10 +498,7 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 
 <section class="sec glow" id="farm" data-nav="farm" aria-labelledby="farm-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="farm-h">First Site:<br>Daegu Micro Farm</h2>
-      <p class="lead">2027년 4분기 대구 상가에 여는 1호점 구상입니다. 챔버에서 기른 채소를 그 자리에서 수확·포장해 판매하고, 견학과 실증 데이터 수집도 함께 합니다.</p>
-    </div>
+    <div class="sec-head"><h2 id="farm-h">First Site:<br>Daegu Micro Farm</h2><p class="lead">2027년 4분기 대구 상가에 여는 1호점 구상입니다. 챔버에서 기른 채소를 그 자리에서 수확·포장해 판매하고, 견학과 실증 데이터 수집도 함께 합니다.</p></div>
     <div class="tabs" role="tablist" aria-label="1호점 구상 보기"><button role="tab" id="tab-0" aria-controls="farm-panel" aria-selected="true" tabindex="0" data-img="microfarm-aerial-labeled" data-alt="대구 상가 마이크로팜 1호점 조감도. 브랜드 모스월, AI 바이오 챔버 존, PLC 제어반과 양액 공급, 육묘 랙과 R&D 벤치, 수확·포장·출하 구역, AI 관제실, 라운지와 견학 동선, 자연채광 창이 표시돼 있다(콘셉트 렌더링)">조감도</button><button role="tab" id="tab-1" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-plan" data-alt="대구 상가 마이크로팜 1호점을 위에서 내려다본 평면 배치도(콘셉트 렌더링)">평면도</button><button role="tab" id="tab-2" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-aerial" data-alt="대구 상가 마이크로팜 1호점 전경. 챔버 열과 작업 공간, 관제실이 보인다(콘셉트 렌더링)">전경</button></div>
     <figure style="margin:0" id="farm-panel" role="tabpanel" aria-labelledby="tab-0">
       <div class="photo">
@@ -552,21 +507,9 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
       </div>
       <figcaption class="cap">1호점 구상 렌더링입니다. 실제 배치와 챔버 대수는 입지가 정해진 뒤 달라질 수 있습니다.</figcaption>
     </figure>
-    <div class="zones">
-      <div class="zone"><i class="dot"></i><div><b>AI 바이오 챔버 존</b><span>구상도 기준 24대, 생육 단계별 운영</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>PLC 제어반·양액 공급</b><span>챔버 열마다 제어반과 양액 라인</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>육묘 랙·R&amp;D 벤치</b><span>모종 기르기와 레시피 시험</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>수확·포장·출하</b><span>수확 당일 포장해 매장과 B2B로 출하</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>AI 관제실</b><span>모든 챔버 상태와 예측을 한 화면에서</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>라운지·견학 동선</b><span>방문객과 기관 견학을 위한 동선</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>브랜드 모스월</b><span>매장 안쪽 벽면의 이끼 정원</span></div></div>
-      <div class="zone"><i class="dot"></i><div><b>자연채광 창</b><span>창가 화분 진열과 매장 개방감</span></div></div>
-    </div>
+    <div class="zones"><div class="zone"><i class="dot"></i><div><b>AI 바이오 챔버 존</b><span>구상도 기준 24대, 생육 단계별 운영</span></div></div><div class="zone"><i class="dot"></i><div><b>PLC 제어반·양액 공급</b><span>챔버 열마다 제어반과 양액 라인</span></div></div><div class="zone"><i class="dot"></i><div><b>육묘 랙·R&amp;D 벤치</b><span>모종 기르기와 레시피 시험</span></div></div><div class="zone"><i class="dot"></i><div><b>수확·포장·출하</b><span>수확 당일 포장해 매장과 B2B로 출하</span></div></div><div class="zone"><i class="dot"></i><div><b>AI 관제실</b><span>모든 챔버 상태와 예측을 한 화면에서</span></div></div><div class="zone"><i class="dot"></i><div><b>라운지·견학 동선</b><span>방문객과 기관 견학을 위한 동선</span></div></div><div class="zone"><i class="dot"></i><div><b>브랜드 모스월</b><span>매장 안쪽 벽면의 이끼 정원</span></div></div><div class="zone"><i class="dot"></i><div><b>자연채광 창</b><span>창가 화분 진열과 매장 개방감</span></div></div></div>
     <div class="card flow-card">
-      <div>
-        <h3>유통을 한 단계로</h3>
-        <p>엽근채소는 소비자가 낸 값의 64.3%가 유통비용입니다(2023). 솔라움은 생산과 판매를 한 매장에 둡니다. 실제 원가와 이익률은 2027년 실증에서 측정해 공개합니다.</p>
-      </div>
+      <div><h3>유통을 한 단계로</h3><p>엽근채소는 소비자가 낸 값의 64.3%가 유통비용입니다(2023). 솔라움은 생산과 판매를 한 매장에 둡니다. 실제 원가와 이익률은 2027년 실증에서 측정해 공개합니다.</p></div>
       <div>
         <div class="chain-row"><b>기존 유통</b><ol class="chain"><li><span>농가</span></li><li><span>산지 수집</span></li><li><span>도매시장</span></li><li><span>중도매·소매</span></li><li><span>소비자</span></li></ol></div>
         <div class="chain-row"><b>솔라움</b><ol class="chain ours"><li><span>상가 속 챔버</span></li><li><span>소비자</span></li></ol></div>
@@ -577,67 +520,22 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 
 <section class="sec tint" id="scale" data-nav="scale" aria-labelledby="scale-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="scale-h">One Module,<br>Many Spaces.</h2>
-      <p class="lead">챔버는 2.4m² 단위 모듈이라 공간 크기에 맞춰 대수만 늘리면 됩니다. 빈 사무실 한 칸부터 물류창고까지 같은 제어 방식으로 운영합니다.</p>
-    </div>
-    <div class="grid g2">
-      <article class="card space">
-        <div class="photo"><img src="img/scale-office.webp" srcset="img/scale-office-800.webp 800w, img/scale-office.webp 1670w" sizes="(max-width: 920px) 100vw, 590px" width="1670" height="942" alt="빈 사무실에 솔라움 챔버 여러 열을 들여놓은 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
-        <div class="body">
-          <h3>도심 상가·유휴 사무실</h3>
-          <p>공실에 챔버 열을 들여 식당, 카페, 급식처 가까이에서 생산합니다.</p>
-          <div class="tags"><span>상가 직판</span><span>식당·카페 정기 공급</span><span>병원·요양시설 급식</span></div>
-        </div>
-      </article>
-      <article class="card space">
-        <div class="photo"><img src="img/scale-warehouse.webp" srcset="img/scale-warehouse-800.webp 800w, img/scale-warehouse.webp 1672w" sizes="(max-width: 920px) 100vw, 590px" width="1672" height="941" alt="물류창고 복층 구조물에 솔라움 챔버를 두 층으로 배치한 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
-        <div class="body">
-          <h3>물류창고·대형 시설</h3>
-          <p>복층 구조물에 챔버를 쌓아 B2B 물량을 생산하고, 같은 AI 관제로 운영합니다.</p>
-          <div class="tags"><span>B2B 대량 공급</span><span>AI 운영 구독</span><span>재배 데이터</span></div>
-        </div>
-      </article>
-    </div>
-    <div class="grid g2 who">
-      <div class="card"><h4>연구·교육기관, 소규모 재배사</h4><p>2.4m² 챔버와 원격 모니터링, 레시피 갱신, 생육 예측을 묶은 AI 운영 서비스를 도입합니다.</p></div>
-      <div class="card"><h4>공공기관과 지자체</h4><p>빈 상가와 미활용 폐교를 실증 거점으로 함께 검증하고, 현장 재배 데이터를 공유합니다.</p></div>
-    </div>
+    <div class="sec-head"><h2 id="scale-h">One Module,<br>Many Spaces.</h2><p class="lead">챔버는 2.4m² 단위 모듈이라 공간 크기에 맞춰 대수만 늘리면 됩니다. 빈 사무실 한 칸부터 물류창고까지 같은 제어 방식으로 운영합니다.</p></div>
+    <div class="grid g2"><article class="card space"><div class="photo"><img src="img/scale-office.webp" srcset="img/scale-office-800.webp 800w, img/scale-office.webp 1670w" sizes="(max-width: 920px) 100vw, 590px" width="1670" height="942" alt="빈 사무실에 솔라움 챔버 여러 열을 들여놓은 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div><div class="body"><h3>도심 상가·유휴 사무실</h3><p>공실에 챔버 열을 들여 식당, 카페, 급식처 가까이에서 생산합니다.</p><div class="tags"><span>상가 직판</span><span>식당·카페 정기 공급</span><span>병원·요양시설 급식</span></div></div></article><article class="card space"><div class="photo"><img src="img/scale-warehouse.webp" srcset="img/scale-warehouse-800.webp 800w, img/scale-warehouse.webp 1672w" sizes="(max-width: 920px) 100vw, 590px" width="1672" height="941" alt="물류창고 복층 구조물에 솔라움 챔버를 두 층으로 배치한 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div><div class="body"><h3>물류창고·대형 시설</h3><p>복층 구조물에 챔버를 쌓아 B2B 물량을 생산하고, 같은 AI 관제로 운영합니다.</p><div class="tags"><span>B2B 대량 공급</span><span>AI 운영 구독</span><span>재배 데이터</span></div></div></article></div>
+    <div class="grid g2 who"><div class="card"><h4>연구·교육기관, 소규모 재배사</h4><p>2.4m² 챔버와 원격 모니터링, 레시피 갱신, 생육 예측을 묶은 AI 운영 서비스를 도입합니다.</p></div><div class="card"><h4>공공기관과 지자체</h4><p>빈 상가와 미활용 폐교를 실증 거점으로 함께 검증하고, 현장 재배 데이터를 공유합니다.</p></div></div>
   </div>
 </section>
 
 <section class="sec" id="roadmap" data-nav="roadmap" aria-labelledby="roadmap-h">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 id="roadmap-h">지금까지, 그리고 2027년</h2>
-      <p class="lead">특허와 법인, 제어 소프트웨어를 갖췄습니다. 2027년 상추 실증으로 성능을 확인한 뒤 대구에 첫 상가 마이크로팜을 엽니다.</p>
-    </div>
-    <div class="grid g4">
-      <article class="card phase done"><p class="label">1단계</p><p class="when">2026년</p><h3>기반 구축</h3>
-        <ul><li>반사 미러 AI 재배기 특허 출원, 심사청구 (7월)</li><li>엣지 AI 제어 소프트웨어 1차 개발, PLC 시뮬레이터 시험 통과 (10월)</li><li>솔라움 주식회사 설립, 대구 본점 (11월)</li></ul>
-        <span class="pill done">완료</span></article>
-      <article class="card phase"><p class="label">2단계</p><p class="when">2027년</p><h3>상추 실증</h3>
-        <ul><li>시제품 챔버 제작</li><li>같은 품종·조건의 대조 챔버와 비교</li><li>칼륨·안토시아닌 레시피 검증</li></ul>
-        <span class="pill plan">예정</span></article>
-      <article class="card phase"><p class="label">3단계</p><p class="when">2027년</p><h3>해외 특허와 인증</h3>
-        <ul><li>PCT 국제 출원 (우선권 기한 2027년 7월)</li><li>스마트팜 ICT 기자재 국가표준(KS) 검정 추진</li></ul>
-        <span class="pill plan">예정</span></article>
-      <article class="card phase"><p class="label">4단계</p><p class="when">2027년 4분기</p><h3>대구 1호점</h3>
-        <ul><li>상가 마이크로팜 개설</li><li>수확 당일 판매와 B2B 정기 공급 시작</li></ul>
-        <span class="pill plan">예정</span></article>
-    </div>
-    <div class="card pledge">
-      <h3>성능은 실측으로 공개합니다</h3>
-      <p>문헌상 수직농장 상추는 kg당 10~18kWh의 전력이 듭니다. 솔라움은 2027년 실증에서 같은 품종·조건의 대조 챔버를 두고 kg당 전력, 상품률, 작업시간을 측정해 공개합니다.</p>
-    </div>
+    <div class="sec-head"><h2 id="roadmap-h">지금까지, 그리고 2027년</h2><p class="lead">특허와 법인, 제어 소프트웨어를 갖췄습니다. 2027년 상추 실증으로 성능을 확인한 뒤 대구에 첫 상가 마이크로팜을 엽니다.</p></div>
+    <div class="grid g4"><article class="card phase done"><p class="label">1단계</p><p class="when">2026년</p><h3>기반 구축</h3><ul><li>반사 미러 AI 재배기 특허 출원, 심사청구 (7월)</li><li>엣지 AI 제어 소프트웨어 1차 개발, PLC 시뮬레이터 시험 통과 (10월)</li><li>솔라움 주식회사 설립, 대구 본점 (11월)</li></ul><span class="pill done">완료</span></article><article class="card phase"><p class="label">2단계</p><p class="when">2027년</p><h3>상추 실증</h3><ul><li>시제품 챔버 제작</li><li>같은 품종·조건의 대조 챔버와 비교</li><li>칼륨·안토시아닌 레시피 검증</li></ul><span class="pill plan">예정</span></article><article class="card phase"><p class="label">3단계</p><p class="when">2027년</p><h3>해외 특허와 인증</h3><ul><li>PCT 국제 출원 (우선권 기한 2027년 7월)</li><li>스마트팜 ICT 기자재 국가표준(KS) 검정 추진</li></ul><span class="pill plan">예정</span></article><article class="card phase"><p class="label">4단계</p><p class="when">2027년 4분기</p><h3>대구 1호점</h3><ul><li>상가 마이크로팜 개설</li><li>수확 당일 판매와 B2B 정기 공급 시작</li></ul><span class="pill plan">예정</span></article></div>
+    <div class="card pledge"><h3>성능은 실측으로 공개합니다</h3><p>문헌상 수직농장 상추는 kg당 10~18kWh의 전력이 듭니다. 솔라움은 2027년 실증에서 같은 품종·조건의 대조 챔버를 두고 kg당 전력, 상품률, 작업시간을 측정해 공개합니다.</p></div>
   </div>
 </section>
 
 <section class="vision" aria-labelledby="vision-h">
-  <div class="wrap">
-    <h2 id="vision-h">Fresh Food,<br>Grown Where People Live.</h2>
-    <p>기후와 유통에 흔들리는 신선 채소를, 사람이 사는 도시 안에서 연중 계획 생산합니다. 대구에서 검증한 모델을 전국의 원도심과 폐교로 넓혀 갑니다.</p>
-  </div>
+  <div class="wrap"><h2 id="vision-h">Fresh Food,<br>Grown Where People Live.</h2><p>기후와 유통에 흔들리는 신선 채소를, 사람이 사는 도시 안에서 연중 계획 생산합니다. 대구에서 검증한 모델을 전국의 원도심과 폐교로 넓혀 갑니다.</p></div>
 </section>
 
 <section class="sec glow" id="contact" data-nav="contact" aria-labelledby="contact-h">
@@ -646,9 +544,7 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
       <div class="c-dark">
         <h2 id="contact-h">도시 유휴 공간의 농장 전환을 함께 실증해 보세요.</h2>
         <p>채소 정기 공급, 챔버 도입, 공공 유휴공간 실증과 투자 협력 문의를 받습니다.</p>
-        <div class="c-type"><b>채소 정기 공급</b><span>식당, 카페, 병원, 요양시설 급식용 맞춤 채소</span></div>
-        <div class="c-type"><b>챔버 도입</b><span>연구·교육기관, 소규모 재배사용 챔버와 AI 운영 서비스</span></div>
-        <div class="c-type"><b>실증·투자 협력</b><span>공공 유휴공간 실증, 정부 R&amp;D 공동 수행, 시드 투자</span></div>
+        <div class="c-type"><b>채소 정기 공급</b><span>식당, 카페, 병원, 요양시설 급식용 맞춤 채소</span></div><div class="c-type"><b>챔버 도입</b><span>연구·교육기관, 소규모 재배사용 챔버와 AI 운영 서비스</span></div><div class="c-type"><b>실증·투자 협력</b><span>공공 유휴공간 실증, 정부 R&amp;D 공동 수행, 시드 투자</span></div>
         <p class="c-meta">이메일 <a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a><br>전화 <a href="tel:+82533829789">053-382-9789</a><br>대구광역시 북구 검단로 161</p>
       </div>
       <form class="card raised form" id="inquiry" novalidate>
@@ -656,8 +552,7 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
         <div class="field"><label for="f-name">이름</label><input id="f-name" name="name" autocomplete="name" placeholder="홍길동"></div>
         <div class="field"><label for="f-org">기관/회사</label><input id="f-org" name="org" autocomplete="organization" placeholder="기관 또는 회사 이름"></div>
         <div class="field"><label for="f-email">회신 이메일</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
-        <div class="field"><label for="f-topic">문의 분야</label>
-          <select id="f-topic" name="topic"><option>채소 정기 공급</option><option>챔버 도입</option><option>실증·투자 협력</option><option>기타</option></select></div>
+        <div class="field"><label for="f-topic">문의 분야</label><select id="f-topic" name="topic"><option>채소 정기 공급</option><option>챔버 도입</option><option>실증·투자 협력</option><option>기타</option></select></div>
         <div class="field full"><label for="f-msg">문의 내용</label><textarea id="f-msg" name="message" placeholder="필요한 품목과 물량, 설치를 생각하는 공간, 협력하고 싶은 내용을 적어 주세요."></textarea></div>
         <div class="form-foot"><button class="btn primary" type="submit">이메일 문의 작성</button><small>입력한 내용으로 메일 작성 창이 열립니다. 이 페이지에는 저장되지 않습니다.</small></div>
       </form>
@@ -670,28 +565,12 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
   <div class="wrap">
     <div>
       <a class="brand" href="#main" aria-label="솔라움 처음으로"><img src="img/solaum-logo.png" width="416" height="152" alt="솔라움 SOLAUM" loading="lazy"></a>
-      <dl>
-        <dt>상호</dt><dd>솔라움 주식회사</dd>
-        <dt>대표이사</dt><dd>유종무</dd>
-        <dt>사업자등록번호</dt><dd>335-87-03961</dd>
-        <dt>주소</dt><dd>대구광역시 북구 검단로 161</dd>
-        <dt>이메일</dt><dd><a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a></dd>
-      </dl>
+      <dl><dt>상호</dt><dd>솔라움 주식회사</dd><dt>대표이사</dt><dd>유종무</dd><dt>사업자등록번호</dt><dd>335-87-03961</dd><dt>주소</dt><dd>대구광역시 북구 검단로 161</dd><dt>이메일</dt><dd><a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a></dd></dl>
     </div>
     <div>
-      <details>
-        <summary>통계·연구 출처 보기</summary>
-        <ul>
-          <li>채소류 소비자물가: 2026년 8월 소비자물가동향</li>
-          <li>농산물 유통비용률: 2023년 농산물 유통실태조사</li>
-          <li>상가 공실률: 2026년 3분기 상업용부동산 임대동향</li>
-          <li>농림어가 고령화: 2025년 농림어업총조사</li>
-          <li>수직농장 전력 사용량: arXiv 2603.15806</li>
-          <li>반사 커튼·근접 조명 효율: Frontiers in Plant Science, 2023</li>
-          <li>재배 레시피 근거: 안동대(2018), 국립원예특작과학원(2010), 전북대(2016)</li>
-        </ul>
-      </details>
+      <details><summary>통계·연구 출처 보기</summary><ul><li>채소류 소비자물가: 2026년 8월 소비자물가동향</li><li>농산물 유통비용률: 2023년 농산물 유통실태조사</li><li>상가 공실률: 2026년 3분기 상업용부동산 임대동향</li><li>농림어가 고령화: 2025년 농림어업총조사</li><li>수직농장 전력 사용량: arXiv 2603.15806</li><li>반사 커튼·근접 조명 효율: Frontiers in Plant Science, 2023</li><li>재배 레시피 근거: 안동대(2018), 국립원예특작과학원(2010), 전북대(2016)</li></ul></details>
       <p class="small muted" style="margin-top:18px">이 사이트의 시설·챔버 이미지는 구상 단계의 콘셉트 렌더링입니다.</p>
+      <p class="small" style="margin-top:12px"><a class="lang" href="en/" hreflang="en" lang="en" aria-label="English version">EN</a></p>
     </div>
     <p class="copy">© 2026 솔라움 주식회사</p>
   </div>
@@ -699,35 +578,44 @@ footer .copy{grid-column:1/-1;color:var(--muted)}
 
 <script>
 (function(){
+  var L={"open": "메뉴 열기", "close": "메뉴 닫기", "prefix": "", "subject": "[솔라움] {topic} 문의", "labels": ["이름", "기관/회사", "회신 이메일", "문의 분야"], "email": "info@solaum.co.kr"};
   // scrollspy
   var links={}; document.querySelectorAll('.nav a[data-nav]').forEach(function(a){links[a.dataset.nav]=a;});
-  var current=null;
-  function setActive(key){ if(key===current) return; current=key;
-    Object.keys(links).forEach(function(k){ links[k].classList.toggle('active', k===key); if(k===key){links[k].setAttribute('aria-current','true');}else{links[k].removeAttribute('aria-current');} }); }
+  var cur=null;
+  function setActive(k){ if(k===cur) return; cur=k; Object.keys(links).forEach(function(x){ var on=x===k; links[x].classList.toggle('active',on); if(on){links[x].setAttribute('aria-current','true');}else{links[x].removeAttribute('aria-current');} }); }
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ setActive(e.target.dataset.nav||null); } }); },
-      {rootMargin:'-45% 0px -50% 0px'});
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) setActive(e.target.dataset.nav||null); }); },{rootMargin:'-45% 0px -50% 0px'});
     document.querySelectorAll('[data-nav]:not(a)').forEach(function(s){ io.observe(s); });
   }
+  // mobile menu
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('mnav');
+  function setMenu(open){ btn.setAttribute('aria-expanded', open?'true':'false'); btn.setAttribute('aria-label', open?L.close:L.open);
+    menu.hidden=!open; document.body.classList.toggle('menu-open',open); }
+  btn.addEventListener('click',function(){ setMenu(menu.hidden); });
+  menu.addEventListener('click',function(e){ var a=e.target.closest('a'); if(!a) return;
+    var h=a.getAttribute('href'); setMenu(false);
+    if(h && h.charAt(0)==='#'){ var el=document.querySelector(h); if(el){ e.preventDefault();
+      var smooth=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      requestAnimationFrame(function(){ el.scrollIntoView({behavior:smooth?'smooth':'auto',block:'start'}); history.pushState(null,'',h); }); } } });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !menu.hidden){ setMenu(false); btn.focus(); } });
+  window.matchMedia('(min-width: 921px)').addEventListener('change',function(m){ if(m.matches) setMenu(false); });
   // tabs
-  var tabs=document.querySelectorAll('.tabs [role=tab]'), img=document.getElementById('farm-img');
+  var tabs=document.querySelectorAll('.tabs [role=tab]'), img=document.getElementById('farm-img'), P=L.prefix;
   tabs.forEach(function(t){ t.addEventListener('click',function(){
-    tabs.forEach(function(o){ o.setAttribute('aria-selected', o===t?'true':'false'); o.tabIndex = o===t?0:-1; });
-    img.src='img/'+t.dataset.img+'.webp';
-    img.srcset='img/'+t.dataset.img+'-800.webp 800w, img/'+t.dataset.img+'.webp 1586w';
-    img.alt=t.dataset.alt;
+    tabs.forEach(function(o){ o.setAttribute('aria-selected', o===t?'true':'false'); o.tabIndex=o===t?0:-1; });
+    img.src=P+'img/'+t.dataset.img+'.webp'; img.srcset=P+'img/'+t.dataset.img+'-800.webp 800w, '+P+'img/'+t.dataset.img+'.webp 1586w'; img.alt=t.dataset.alt;
+    document.getElementById('farm-panel').setAttribute('aria-labelledby', t.id);
   }); });
-  document.querySelector('.tabs') && document.querySelector('.tabs').addEventListener('keydown',function(e){
-    var list=[].slice.call(tabs), i=list.indexOf(document.activeElement); if(i<0) return;
-    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); var n=list[(i+(e.key==='ArrowRight'?1:list.length-1))%list.length]; n.focus(); n.click(); }
-  });
+  var tl=document.querySelector('.tabs');
+  tl && tl.addEventListener('keydown',function(e){ var a=[].slice.call(tabs), i=a.indexOf(document.activeElement); if(i<0) return;
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); var n=a[(i+(e.key==='ArrowRight'?1:a.length-1))%a.length]; n.focus(); n.click(); } });
   // inquiry form -> mail draft
   var f=document.getElementById('inquiry');
   f && f.addEventListener('submit',function(e){ e.preventDefault();
     var v=function(n){ return (f.elements[n].value||'').trim(); };
-    var subject='[솔라움] '+v('topic')+' 문의'+(v('org')?' - '+v('org'):'');
-    var body='이름: '+v('name')+'\n기관/회사: '+v('org')+'\n회신 이메일: '+v('email')+'\n문의 분야: '+v('topic')+'\n\n'+v('message');
-    window.location.href='mailto:info@solaum.co.kr?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    var subject=L.subject.replace('{topic}', v('topic'))+(v('org')?' - '+v('org'):'');
+    var body=L.labels[0]+': '+v('name')+'\n'+L.labels[1]+': '+v('org')+'\n'+L.labels[2]+': '+v('email')+'\n'+L.labels[3]+': '+v('topic')+'\n\n'+v('message');
+    window.location.href='mailto:'+L.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   });
 })();
 </script>
