@@ -3,565 +3,411 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>솔라움 SOLAUM | 도시에서 기르는 신선 채소, AI 바이오 챔버</title>
-<meta name="description" content="솔라움은 냉장고 크기의 AI 바이오 챔버로 도시의 빈 상가와 유휴 공간에서 신선 채소를 기르고, 기른 자리에서 바로 공급합니다. 대구광역시 소재.">
+<title>솔라움 SOLAUM | 빈 상가를 도시의 농장으로, AI 바이오 챔버</title>
+<meta name="description" content="솔라움은 냉장고 크기의 AI 바이오 챔버로 도시의 빈 상가와 유휴 공간에서 신선 채소를 기르고, 기른 자리에서 바로 공급합니다. 반사 미러 재배기 특허 출원, 대구 상가 마이크로팜 1호점 준비 중.">
 <link rel="canonical" href="https://www.solaum.co.kr/">
-<meta name="theme-color" content="#2E7A4C">
+<meta name="theme-color" content="#0B2E22">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="솔라움 SOLAUM">
-<meta property="og:title" content="솔라움 | 빈 상가에서 날씨와 상관없이 자라는 채소">
+<meta property="og:title" content="솔라움 | 빈 상가를 도시의 농장으로 바꿉니다">
 <meta property="og:description" content="반사 미러 특허 출원 AI 바이오 챔버로 도시 유휴 공간에서 신선 채소를 기르고 바로 공급합니다.">
 <meta property="og:url" content="https://www.solaum.co.kr/">
 <meta property="og:image" content="https://www.solaum.co.kr/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%232E7A4C%22/%3E%3Crect%20x%3D%229%22%20y%3D%227%22%20width%3D%2214%22%20height%3D%223%22%20rx%3D%221.5%22%20fill%3D%22%23FCE6F2%22/%3E%3Cpath%20d%3D%22M11%2010%20L6%2014%20L12%2022%20M21%2010%20L26%2014%20L20%2022%22%20stroke%3D%22%23F3A6D0%22%20stroke-width%3D%221.4%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M16%2026%20C%2010%2024%2C%2010%2017%2C%2016%2014%20C%2022%2017%2C%2022%2024%2C%2016%2026%20Z%22%20fill%3D%22%23A3D47B%22/%3E%3Cpath%20d%3D%22M16%2025%20L16%2017%22%20stroke%3D%22%232E7A4C%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "솔라움 주식회사", "alternateName": "SOLAUM", "url": "https://www.solaum.co.kr/", "email": "info@solaum.co.kr", "telephone": "+82533829789", "foundingDate": "2026-11-02", "address": {"@type": "PostalAddress", "streetAddress": "검단로 161", "addressLocality": "대구광역시 북구", "addressCountry": "KR"}}</script>
-<style>
-:root{
-  --paper:#F3F6F2; --paper-2:#E7EEE8; --ink:#17241C; --ink-2:#4B5B51;
-  --leaf:#2E7A4C; --leaf-deep:#1F5A37; --lettuce:#A3D47B; --glow:#D63C93;
-  --chamber:#16201B; --rule:#CCD8CF;
-  --wrap:1120px; --pad:clamp(20px,4vw,40px);
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preload" as="image" href="img/farm-aisle.webp" imagesrcset="img/farm-aisle-800.webp 800w, img/farm-aisle.webp 1586w" imagesizes="(max-width: 920px) 100vw, 640px">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "솔라움 주식회사", "alternateName": "SOLAUM", "url": "https://www.solaum.co.kr/", "logo": "https://www.solaum.co.kr/img/solaum-logo.png", "email": "info@solaum.co.kr", "telephone": "+82533829789", "foundingDate": "2026-11-02", "address": {"@type": "PostalAddress", "streetAddress": "검단로 161", "addressLocality": "대구광역시 북구", "addressCountry": "KR"}}</script>
+<style>:root{
+  --ink:#0B2E22; --ink-2:#2C3D36; --text:#5D6B65; --muted:#8A968F;
+  --green:#138A48; --green-2:#42C15B; --mint:#2CCFAE;
+  --bg:#FFFFFF; --tint:#F4F8F5; --line:#E2E9E4;
+  --dark:#0B2E22; --dark-2:#14412F; --dark-line:rgba(255,255,255,.12);
+  --r-xl:36px; --r-lg:28px; --r-md:20px; --r-sm:14px;
+  --sh:0 30px 90px rgba(11,46,34,.10); --sh-sm:0 12px 34px rgba(11,46,34,.08);
+  --wrap:1200px; --pad:clamp(20px,4vw,48px);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
-  font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;
-  -webkit-font-smoothing:antialiased}
-img,svg{display:block;max-width:100%}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Pretendard,"Pretendard Variable",-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+svg{display:block;max-width:100%}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:4px}
-.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:6px;z-index:20}
-.skip:focus{left:12px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--green-2);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-9999px;top:10px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;z-index:50}
+.skip:focus{left:14px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
-h1,h2,h3{margin:0;font-weight:600;color:var(--ink)}
-h1{font-size:clamp(2.5rem,1.3rem + 4.3vw,4.5rem);line-height:1.16;letter-spacing:-.035em}
-h2{font-size:clamp(1.75rem,1.15rem + 1.9vw,2.55rem);line-height:1.3;letter-spacing:-.025em}
-h3{font-size:1.25rem;line-height:1.45;letter-spacing:-.01em}
+h1,h2,h3,h4{margin:0;color:var(--ink);font-weight:700}
+h1{font-size:clamp(2.75rem,1.5rem + 4.6vw,5.25rem);line-height:1.08;letter-spacing:-.055em}
+h2{font-size:clamp(2.1rem,1.25rem + 3.1vw,3.65rem);line-height:1.12;letter-spacing:-.05em}
+h3{font-size:1.375rem;line-height:1.4;letter-spacing:-.03em}
+h4{font-size:1.0625rem;line-height:1.45;letter-spacing:-.02em}
 p{margin:0}
-.lead{font-size:1.125rem;color:var(--ink-2);max-width:38em}
-.muted{color:var(--ink-2)}
+.lead{font-size:clamp(1.0625rem,1rem + .35vw,1.3125rem);line-height:1.85;color:var(--text);max-width:44em}
 .small{font-size:.875rem;line-height:1.65}
+.muted{color:var(--muted)}
+.cap{margin-top:12px;font-size:.8125rem;color:var(--muted)}
 
 /* header */
-.top{position:sticky;top:0;z-index:10;background:rgba(243,246,242,.88);
-  backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);
-  border-bottom:1px solid transparent;transition:border-color .2s}
-.top.scrolled{border-bottom-color:var(--rule)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:1.125rem;letter-spacing:-.01em}
-.brand small{font-weight:500;color:var(--ink-2);font-size:.8125rem;letter-spacing:.02em}
-.nav{display:flex;gap:28px;align-items:center;font-size:.9375rem}
-.nav a{text-decoration:none;color:var(--ink-2)}
-.nav a:hover{color:var(--ink)}
-.nav .cta{color:#fff;background:var(--leaf);padding:7px 14px;border-radius:6px}
-.nav .cta:hover{background:var(--leaf-deep);color:#fff}
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px}
+.brand img{height:42px;width:auto}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{text-decoration:none;font-size:.9375rem;font-weight:600;color:var(--ink-2);padding:9px 16px;border-radius:999px;transition:background .2s,color .2s,box-shadow .2s}
+.nav a:hover{background:var(--tint)}
+.nav a.active{background:var(--green);color:#fff;box-shadow:0 10px 24px rgba(19,138,72,.28)}
+.nav .cta{background:var(--ink);color:#fff}
+.nav .cta:hover{background:var(--dark-2)}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 26px;border-radius:999px;
+  font-weight:700;font-size:1rem;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(135deg,var(--green) 0%,#25A85A 55%,var(--green-2) 100%);color:#fff;box-shadow:0 16px 34px rgba(19,138,72,.30)}
+.btn.light{background:#fff;color:var(--ink);box-shadow:var(--sh-sm);border:1px solid var(--line)}
 
 /* hero */
-.hero{padding:clamp(40px,7vw,88px) 0 clamp(56px,8vw,104px)}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,72px);align-items:center}
+.hero{position:relative;padding:clamp(56px,8vw,112px) 0 clamp(72px,9vw,128px);overflow:hidden;
+  background:radial-gradient(900px 520px at 85% 10%,rgba(66,193,91,.14),transparent 60%),
+             radial-gradient(700px 480px at 0% 100%,rgba(44,207,174,.10),transparent 60%),#F6FAF7}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(36px,5vw,72px);align-items:center}
+.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;font-size:.9375rem;font-weight:700;color:var(--green);letter-spacing:-.01em}
+.eyebrow::before{content:"";width:40px;height:2px;background:var(--green);border-radius:2px}
 .hero h1{margin-bottom:28px}
-.hero .lead{margin-bottom:36px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;
-  font:inherit;font-size:1rem;font-weight:600;text-decoration:none;border:1.5px solid var(--ink)}
-.btn.primary{background:var(--leaf);border-color:var(--leaf);color:#fff}
-.btn.primary:hover{background:var(--leaf-deep);border-color:var(--leaf-deep)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--paper-2)}
-.facts-mini{display:flex;flex-wrap:wrap;gap:12px 36px;margin:48px 0 0;padding:20px 0 0;border-top:1px solid var(--rule)}
-.facts-mini div{min-width:7em}
-.facts-mini dt{font-size:.8125rem;color:var(--ink-2)}
-.facts-mini dd{margin:2px 0 0;font-weight:600}
-.hero-art{justify-self:end;width:100%;max-width:400px}
-.chamber{width:100%;height:auto;filter:drop-shadow(0 24px 40px rgba(23,36,28,.22))}
-.ray{fill:none;stroke:#F49ACB;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;
-  stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.5s cubic-bezier(.3,.6,.2,1) forwards;animation-delay:calc(var(--d) + .5s)}
-.cone,.led-glow{opacity:0;animation:fade 1.1s ease-out forwards;animation-delay:var(--d)}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fade{to{opacity:1}}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .ray{animation:none;stroke-dashoffset:0}
-  .cone,.led-glow{animation:none;opacity:1}
-}
+.hero .lead{margin-bottom:40px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:48px}
+.hero-stats dt{font-size:.8125rem;color:var(--muted);font-weight:500}
+.hero-stats dd{margin:2px 0 0;font-size:1.25rem;font-weight:700;letter-spacing:-.03em}
+.hero-media{position:relative}
+.photo{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh);background:#E9EFEB;isolation:isolate}
+.photo img{width:100%;aspect-ratio:auto}
+.hero .photo img{aspect-ratio:1/0.86;object-fit:cover;object-position:52% 50%}
+.split.fill .photo{height:100%}
+.split.fill .photo img{height:100%;object-fit:cover}
+.split.top{align-items:start}
+.hero .photo{animation:rise 1s cubic-bezier(.2,.7,.2,1) both .1s}
+@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.chip-float{position:absolute;left:22px;bottom:22px;display:flex;align-items:center;gap:10px;padding:11px 16px;border-radius:999px;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:.875rem;font-weight:700;box-shadow:var(--sh-sm)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--green-2);box-shadow:0 0 0 4px rgba(66,193,91,.18);flex:none}
+.tag-render{position:absolute;right:18px;top:18px;padding:6px 12px;border-radius:999px;background:rgba(11,46,34,.62);color:#fff;font-size:.75rem;font-weight:600}
 
 /* sections */
-section.block{padding:clamp(64px,9vw,120px) 0}
-section.alt{background:var(--paper-2)}
-.sec-head{max-width:46em;margin-bottom:clamp(36px,5vw,56px)}
-.sec-head h2{margin-bottom:18px}
+.sec{padding:clamp(80px,10vw,140px) 0}
+.sec.tint{background:var(--tint)}
+.sec.glow{background:radial-gradient(800px 420px at 85% 0%,rgba(66,193,91,.10),transparent 60%),#fff}
+.sec-head{max-width:860px;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head h2{margin-bottom:20px}
+.sec-head .kicker{font-size:.9375rem;font-weight:700;color:var(--green);margin-bottom:14px}
 
-/* why */
-.facts{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
-.facts li{display:grid;grid-template-columns:minmax(8.5rem,13rem) minmax(0,1fr);gap:8px 32px;padding:26px 0;border-bottom:1px solid var(--rule)}
-.facts .num{font-size:clamp(2.1rem,1.6rem + 1.6vw,3rem);line-height:1.05;font-weight:500;letter-spacing:-.03em;
-  color:var(--leaf-deep);font-variant-numeric:tabular-nums}
-.facts .num span{font-size:.5em;margin-left:2px;font-weight:600}
-.facts h3{margin-bottom:4px}
-.facts p{color:var(--ink-2);max-width:40em}
-.src{margin-top:20px;color:var(--ink-2)}
+/* cards */
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(24px,2.6vw,36px);
+  box-shadow:0 1px 0 rgba(11,46,34,.02)}
+.card.raised{box-shadow:var(--sh);border-radius:var(--r-xl)}
+.grid{display:grid;gap:18px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* problem */
+.stat .num{font-size:clamp(2.4rem,1.8rem + 1.8vw,3.25rem);line-height:1;font-weight:700;letter-spacing:-.05em;color:var(--green);font-variant-numeric:tabular-nums;margin-bottom:20px}
+.stat .num small{font-size:.5em;margin-left:2px}
+.stat h3{font-size:1.1875rem;margin-bottom:8px}
+.stat p{color:var(--text);font-size:.9375rem;line-height:1.7}
+.card.stat{background:linear-gradient(180deg,#fff 0%,#fff 60%,#F7FAF8 100%)}
+.src{margin-top:22px;color:var(--muted)}
 
 /* chamber */
-.chamber-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,80px);align-items:center}
-.blueprint{width:100%;max-width:420px;height:auto}
-.parts{list-style:none;margin:0;padding:0;counter-reset:part}
-.parts li{counter-increment:part;display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--rule)}
-.parts li:first-child{border-top:1px solid var(--rule)}
-.parts li::before{content:counter(part);display:grid;place-items:center;width:28px;height:28px;margin-top:2px;
-  border-radius:50%;background:var(--leaf);color:#fff;font-size:.8125rem;font-weight:600}
-.parts b{display:block;font-weight:600}
-.parts span{color:var(--ink-2);font-size:.9375rem}
-.spec{margin-top:24px;color:var(--ink-2)}
+.split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,3vw,40px);align-items:stretch}
+.specs{display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.spec-list{list-style:none;margin:0;padding:0}
+.spec-list li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.spec-list li:first-child{padding-top:0}
+.spec-list span{color:var(--text)}
+.spec-list b{font-weight:700;text-align:right}
+.feat h4{margin-bottom:6px}
+.feat p{color:var(--text);font-size:.9375rem;line-height:1.65}
+.feat .ic{width:40px;height:40px;border-radius:12px;background:var(--tint);display:grid;place-items:center;margin-bottom:18px;color:var(--green)}
+.row-gap{margin-top:18px}
 
-/* tech */
-.tech{display:grid;gap:clamp(64px,8vw,104px)}
-.tech-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,64px);align-items:start}
-.tech-row h3{font-size:clamp(1.35rem,1.1rem + .8vw,1.75rem);letter-spacing:-.02em;margin-bottom:16px}
-.tech-row p + p{margin-top:14px}
-.tech-row.single{grid-template-columns:minmax(0,1fr);gap:28px}
-.tech-row.single > div:first-child{max-width:44em}
-.badge{display:inline-block;margin-top:22px;padding:6px 12px;border:1.5px solid var(--leaf);color:var(--leaf-deep);
-  border-radius:6px;font-size:.875rem;font-weight:600}
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0}
+/* spec bar */
+.specbar{display:flex;flex-direction:column;gap:14px}
+.specbar dl{margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px 20px}
+.specbar dl > div{padding-left:16px;border-left:2px solid #DDE8E1}
+.specbar dt{font-size:.8125rem;color:var(--muted);font-weight:500}
+.specbar dd{margin:4px 0 0;font-weight:700;letter-spacing:-.02em;line-height:1.4}
+@media (max-width:1080px){.specbar dl{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.specbar dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* tech: mirror compare */
 .compare figure{margin:0}
-.compare svg{width:100%;height:auto;border-radius:10px}
-.compare figcaption{margin-top:10px;font-size:.9375rem;font-weight:600}
-.compare figcaption span{display:block;font-weight:400;color:var(--ink-2);font-size:.875rem}
+.compare svg{width:100%;height:auto;border-radius:18px}
+.compare figcaption{margin-top:16px}
+.compare figcaption b{display:block;font-size:1.0625rem}
+.compare figcaption span{color:var(--text);font-size:.9375rem}
+.patent{background:var(--dark);color:#fff;border-color:transparent}
+.patent h3{color:#fff;margin-bottom:18px}
+.patent dl{margin:0}
+.patent dt{font-size:.8125rem;color:rgba(255,255,255,.6);margin-top:14px}
+.patent dd{margin:2px 0 0;font-weight:600}
+.patent p{color:rgba(255,255,255,.72);font-size:.875rem;margin-top:22px;line-height:1.65}
 
-.layers{display:grid;gap:0}
-.layer{border:1.5px solid var(--ink);border-radius:8px;padding:18px 20px;background:var(--paper)}
-.layer.ai{border-style:dashed}
-.layer.plc{border-color:var(--leaf);background:#fff;box-shadow:inset 4px 0 0 var(--leaf)}
-.layer b{display:block;font-size:1.0625rem}
-.layer span{color:var(--ink-2);font-size:.9375rem}
-.link{display:grid;grid-template-columns:1fr 1fr;padding:6px 0;font-size:.8125rem;color:var(--ink-2)}
-.link div{display:flex;align-items:center;gap:6px;justify-content:center}
-.link svg{flex:none}
+/* AI */
+.layers{display:flex;flex-direction:column;gap:0}
+.layer{border-radius:var(--r-md);padding:20px 22px;background:#fff;border:1px solid var(--line)}
+.layer b{display:block;font-size:1.0625rem;margin-bottom:2px}
+.layer span{color:var(--text);font-size:.9375rem;line-height:1.6;display:block}
+.layer.ai{border:1.5px dashed #9FB7AA;background:#FBFDFC}
+.layer.plc{border:1.5px solid var(--green);box-shadow:inset 5px 0 0 var(--green)}
+.flowline{display:flex;justify-content:space-around;padding:8px 0;font-size:.8125rem;color:var(--muted)}
+.flowline span{display:flex;align-items:center;gap:6px}
+.table-card{padding:0;overflow:hidden}
+.tbl{width:100%;border-collapse:collapse;font-size:.9375rem}
+.tbl th,.tbl td{text-align:left;padding:18px 24px;vertical-align:top;border-top:1px solid var(--line)}
+.tbl thead th{background:#F7FAF8;border-top:0;font-size:.875rem;font-weight:700;color:var(--ink)}
+.tbl td:first-child{font-weight:700;white-space:nowrap}
+.tbl td{color:var(--text)}
+.tbl td:first-child{color:var(--ink)}
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.8125rem;font-weight:700;white-space:nowrap}
+.pill.plan{background:#EAF6EE;color:var(--green)}
+.pill.done{background:var(--green);color:#fff}
+.note{margin-top:16px;font-size:.875rem;color:var(--muted)}
 
-.recipes{width:100%;border-collapse:collapse;font-size:.9375rem}
-.recipes th,.recipes td{text-align:left;padding:14px 12px 14px 0;border-bottom:1px solid var(--rule);vertical-align:top}
-.recipes thead th{font-size:.8125rem;color:var(--ink-2);font-weight:500;border-bottom:1.5px solid var(--ink)}
-.recipes td:first-child{font-weight:600;white-space:nowrap;padding-right:28px}
-.recipes th:nth-child(2),.recipes td:nth-child(2){width:34%}
-.note{margin-top:16px;font-size:.875rem;color:var(--ink-2)}
+/* microfarm */
+.tabs{display:inline-flex;gap:6px;padding:6px;background:var(--tint);border-radius:999px;margin-bottom:20px}
+.tabs button{border:0;background:transparent;padding:10px 20px;border-radius:999px;font-weight:700;font-size:.9375rem;color:var(--ink-2);cursor:pointer}
+.tabs button[aria-selected="true"]{background:#fff;color:var(--ink);box-shadow:var(--sh-sm)}
+.zones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.zone{display:flex;gap:12px;align-items:flex-start;padding:18px;border-radius:var(--r-md);background:#fff;border:1px solid var(--line)}
+.zone .dot{margin-top:8px}
+.zone b{display:block;font-size:.9688rem}
+.zone span{display:block;color:var(--text);font-size:.875rem;line-height:1.55;margin-top:2px}
+.flow-card{margin-top:18px;display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:36px;align-items:center}
+.flow-card h3{margin-bottom:10px}
+.flow-card p{color:var(--text);font-size:.9375rem}
+.chain-row{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:16px;align-items:center}
+.chain-row + .chain-row{margin-top:16px}
+.chain-row > b{font-size:.875rem}
+.chain{list-style:none;margin:0;padding:0;display:flex;align-items:center;flex-wrap:wrap;row-gap:10px}
+.chain li{display:flex;align-items:center}
+.chain li span{padding:8px 14px;border-radius:999px;border:1px solid #CBD7D0;background:#fff;font-size:.875rem;font-weight:600;white-space:nowrap}
+.chain li:not(:last-child)::after{content:"";width:18px;height:1.5px;background:#B7C6BD;margin:0 4px}
+.chain.ours li span{background:var(--green);border-color:var(--green);color:#fff}
+.chain.ours li:not(:last-child)::after{background:var(--green);width:40px}
 
-/* model */
-.flow{display:grid;gap:28px;margin-bottom:clamp(48px,6vw,72px)}
-.flow-row{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:20px;align-items:center}
-.flow-row > b{font-size:.9375rem}
-.chain{list-style:none;margin:0;padding:0;display:flex;align-items:center}
-.chain li{position:relative;flex:1 1 0;display:flex;align-items:center}
-.chain li:last-child{flex:0 0 auto}
-.chain li span{white-space:nowrap;padding:8px 14px;border-radius:999px;border:1.5px solid var(--ink-2);font-size:.9375rem;background:var(--paper)}
-.chain li:not(:last-child)::after{content:"";flex:1;height:1.5px;background:var(--ink-2);margin:0 6px;min-width:12px}
-.chain.ours li span{border-color:var(--leaf);background:var(--leaf);color:#fff;font-weight:600}
-.chain.ours li:not(:last-child)::after{background:var(--leaf);flex:0 0 40px}
-.chain.ours li{flex:0 0 auto}
-.flow-note{color:var(--ink-2);max-width:42em}
-.who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(32px,5vw,64px)}
-.who > div{padding:24px 0;border-top:1px solid var(--rule)}
-.who h3{margin-bottom:6px}
-.who p{color:var(--ink-2)}
+/* scale */
+.space .photo{border-radius:var(--r-lg);box-shadow:none;margin:-1px -1px 0;border-radius:var(--r-lg) var(--r-lg) 0 0}
+.space{padding:0;overflow:hidden}
+.space .body{padding:28px clamp(24px,2.6vw,34px) 32px}
+.space h3{margin-bottom:8px}
+.space p{color:var(--text);font-size:.9375rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{padding:6px 12px;border-radius:999px;background:#EEF6F1;color:var(--green);font-size:.8125rem;font-weight:700}
+.who{margin-top:18px}
+.who .card h4{margin-bottom:6px}
+.who .card p{color:var(--text);font-size:.9375rem;line-height:1.65}
 
 /* roadmap */
-.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0}
-.timeline li{position:relative;padding:34px 16px 0 0}
-.timeline li::before{content:"";position:absolute;left:0;right:0;top:9px;height:1.5px;background:var(--rule)}
-.timeline li.done::before{background:var(--leaf)}
-.timeline li::after{content:"";position:absolute;left:0;top:2px;width:16px;height:16px;border-radius:50%;
-  background:var(--paper-2);border:2px solid var(--leaf)}
-.timeline li.done::after{background:var(--leaf)}
-.timeline li.done:has(+ li:not(.done))::before{background:linear-gradient(90deg,var(--leaf) 0 16px,var(--rule) 16px)}
-.timeline time{display:block;font-weight:600;font-size:.9375rem;margin-bottom:6px}
-.timeline p{font-size:.9375rem;color:var(--ink-2);line-height:1.6}
-.timeline .state{display:block;margin-top:8px;font-size:.8125rem;color:var(--leaf-deep);font-weight:600}
-.timeline li:not(.done) .state{color:var(--ink-2);font-weight:500}
-.pledge{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:24px 48px;
-  padding:28px 0 0;border-top:1.5px solid var(--ink)}
-.pledge h3{font-size:1.375rem}
+.phase .label{font-size:.8125rem;font-weight:700;color:var(--green);margin-bottom:4px}
+.phase .when{font-size:.875rem;color:var(--muted);margin-bottom:16px}
+.phase h3{font-size:1.25rem;margin-bottom:12px}
+.phase ul{margin:0;padding:0;list-style:none}
+.phase li{position:relative;padding-left:16px;color:var(--text);font-size:.9375rem;line-height:1.6;margin-top:6px}
+.phase li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:#B7C6BD}
+.phase.done li::before{background:var(--green)}
+.phase{display:flex;flex-direction:column}
+.phase .pill{margin-top:auto;align-self:flex-start}
+.phase ul{margin-bottom:22px}
+.pledge{margin-top:18px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px 40px;align-items:center}
+.pledge p{color:var(--text)}
+
+/* vision */
+.vision{background:var(--dark);color:#fff;text-align:center;padding:clamp(88px,11vw,150px) 0;
+  background-image:radial-gradient(700px 300px at 50% 0%,rgba(66,193,91,.18),transparent 70%)}
+.vision h2{color:#fff;max-width:16em;margin:0 auto 24px}
+.vision p{color:rgba(255,255,255,.75);max-width:40em;margin:0 auto;font-size:1.125rem;line-height:1.85}
 
 /* contact */
-.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:start}
-.contact h2{margin-bottom:18px}
-.mail{display:inline-block;font-size:clamp(1.5rem,1.1rem + 1.6vw,2.25rem);font-weight:600;letter-spacing:-.02em;
-  color:var(--leaf-deep);text-decoration-thickness:2px;text-underline-offset:6px}
-.contact dl{margin:24px 0 32px;display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:8px 16px}
-.contact dt{color:var(--ink-2)}
-.contact dd{margin:0}
-.contact dd a{text-decoration:none}
-.topics{display:flex;flex-wrap:wrap;gap:10px}
-.topics .btn{min-height:44px;font-size:.9375rem;border-width:1.5px}
+.contact-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:22px;align-items:stretch}
+.c-dark{background:var(--dark);color:#fff;border-radius:var(--r-xl);padding:clamp(32px,4vw,52px);box-shadow:var(--sh)}
+.c-dark h2{color:#fff;font-size:clamp(2rem,1.3rem + 2.4vw,3rem);margin-bottom:20px}
+.c-dark > p{color:rgba(255,255,255,.75);margin-bottom:28px}
+.c-type{display:block;padding:18px 20px;border-radius:var(--r-md);background:var(--dark-2);border:1px solid var(--dark-line);margin-top:10px}
+.c-type b{display:block;color:#fff}
+.c-type span{display:block;color:rgba(255,255,255,.66);font-size:.875rem;margin-top:2px}
+.c-meta{margin-top:26px;font-size:.875rem;color:rgba(255,255,255,.66);line-height:1.8}
+.c-meta a{color:#fff;text-decoration:none}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 16px;align-content:start}
+.form h3{grid-column:1/-1;font-size:1.625rem;margin-bottom:6px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.8125rem;font-weight:700}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border-radius:var(--r-sm);border:1px solid #D5DFD9;background:#fff;font-size:.9375rem}
+.field textarea{min-height:150px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(19,138,72,.12)}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:6px}
+.form-foot small{color:var(--muted)}
 
 /* footer */
-footer{padding:48px 0 64px;border-top:1px solid var(--rule);font-size:.875rem;color:var(--ink-2)}
-footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px}
+footer{padding:56px 0 72px;border-top:1px solid var(--line);font-size:.875rem;color:var(--text)}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+footer .brand img{height:30px;margin-bottom:22px}
 footer dl{margin:0;display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:4px 12px}
+footer dt{color:var(--muted)}
 footer dd{margin:0}
-footer details summary{cursor:pointer;color:var(--ink)}
-footer details ul{margin:12px 0 0;padding-left:18px}
-footer .copy{grid-column:1/-1;margin-top:8px}
+footer details summary{cursor:pointer;font-weight:700;color:var(--ink)}
+footer details ul{margin:12px 0 0;padding-left:18px;line-height:1.8}
+footer .copy{grid-column:1/-1;color:var(--muted)}
 
 /* responsive */
-@media (max-width:960px){
-  .timeline{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:36px}
+@media (max-width:1080px){
+  .g5{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .zones{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-@media (max-width:860px){
+@media (max-width:920px){
   .nav a:not(.cta){display:none}
-  .hero .wrap,.chamber-grid,.tech-row,.contact .wrap,.pledge,footer .wrap{grid-template-columns:1fr}
-  .hero-art{justify-self:start;max-width:340px}
-  .blueprint{max-width:360px}
-  .who{grid-template-columns:1fr}
+  .hero .wrap,.split,.contact-grid,.flow-card,.pledge,footer .wrap{grid-template-columns:1fr}
+  .g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g2{grid-template-columns:1fr}
 }
-@media (max-width:600px){
+@media (max-width:620px){
   body{font-size:16px}
-  .facts li{grid-template-columns:1fr;gap:6px}
-  .flow-row{grid-template-columns:1fr;gap:10px}
-  .chain{flex-wrap:wrap;row-gap:10px}
-  .chain li{flex:0 0 auto}
-  .chain li:not(:last-child)::after{flex:0 0 14px}
-  .compare{grid-template-columns:1fr}
-  .timeline{grid-template-columns:1fr;row-gap:0}
-  .timeline li{padding:0 0 28px 34px}
-  .timeline li::before{left:7px;right:auto;top:18px;bottom:0;width:1.5px;height:auto}
-  .timeline li:last-child::before{display:none}
-  .timeline li::after{top:4px}
-  .recipes thead{display:none}
-  .recipes,.recipes tbody,.recipes tr,.recipes td{display:block;width:auto}
-  .recipes tr{padding:14px 0;border-bottom:1px solid var(--rule)}
-  .recipes tr:first-child{border-top:1.5px solid var(--ink)}
-  .recipes td{border:0;padding:2px 0}
-  .recipes td:first-child{white-space:normal;margin-bottom:6px}
-  .recipes td[data-label]::before{content:attr(data-label);display:block;font-size:.8125rem;color:var(--ink-2)}
-  .recipes td[data-label] + td[data-label]{margin-top:8px}
-  .timeline li.done:has(+ li:not(.done))::before{background:var(--rule)}
-  footer dl{grid-template-columns:7rem minmax(0,1fr)}
+  .top .wrap{height:68px}
+  .brand img{height:30px}
+  .g4,.g3,.g5,.zones,.form{grid-template-columns:1fr}
+  .chain-row{grid-template-columns:1fr;gap:8px}
+  .tbl thead{display:none}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:auto}
+  .tbl tr{padding:16px 20px;border-top:1px solid var(--line)}
+  .tbl tr:first-child{border-top:0}
+  .tbl td{border:0;padding:2px 0}
+  .tbl td:first-child{white-space:normal;margin-bottom:6px}
+  .tbl td[data-label]::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--muted);font-weight:600}
+  .tbl td[data-label] + td[data-label]{margin-top:8px}
+  .tabs{display:flex;width:100%}
+  .tabs button{flex:1;padding:10px 8px}
+  .chip-float{left:12px;bottom:12px;font-size:.8125rem;padding:9px 13px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero .photo{animation:none}
+  .btn,.nav a{transition:none}
 }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
 
-<header class="top" id="top">
+<header class="top">
   <div class="wrap">
-    <a class="brand" href="#main" aria-label="솔라움 처음으로"><svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="8" fill="#2E7A4C"/><rect x="9" y="7" width="14" height="3" rx="1.5" fill="#FCE6F2"/><path d="M11 10 L6 14 L12 22 M21 10 L26 14 L20 22" stroke="#F3A6D0" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 26 C 10 24, 10 17, 16 14 C 22 17, 22 24, 16 26 Z" fill="#A3D47B"/><path d="M16 25 L16 17" stroke="#2E7A4C" stroke-width="1.2" stroke-linecap="round"/></svg><span>솔라움 <small>SOLAUM</small></span></a>
+    <a class="brand" href="#main" aria-label="솔라움 처음으로"><img src="img/solaum-logo.png" width="416" height="152" alt="솔라움 SOLAUM"></a>
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="#chamber">챔버</a>
-      <a href="#tech">기술</a>
-      <a href="#model">사업</a>
-      <a href="#roadmap">일정</a>
-      <a class="cta" href="#contact">문의</a>
+      <a href="#why" data-nav="why">문제</a>
+      <a href="#chamber" data-nav="chamber">챔버</a>
+      <a href="#tech" data-nav="tech">기술</a>
+      <a href="#farm" data-nav="farm">1호점</a>
+      <a href="#scale" data-nav="scale">확장</a>
+      <a href="#roadmap" data-nav="roadmap">일정</a>
+      <a class="cta" href="#contact" data-nav="contact">문의</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-<section class="hero">
+
+<section class="hero" aria-labelledby="hero-h">
   <div class="wrap">
     <div>
-      <h1>빈 상가에서,<br>날씨와 상관없이<br>자라는 채소</h1>
+      <p class="eyebrow">도시형 마이크로팜을 위한 AI 바이오 챔버</p>
+      <h1 id="hero-h">빈 상가를<br>도시의 농장으로<br>바꿉니다.</h1>
       <p class="lead">솔라움은 냉장고 크기의 AI 바이오 챔버로 도시의 유휴 공간에서 신선 채소를 기르고, 기른 자리에서 바로 공급합니다.</p>
       <div class="btns">
-        <a class="btn primary" href="#contact">도입 문의하기</a>
-        <a class="btn ghost" href="#chamber">챔버 구조 보기</a>
+        <a class="btn primary" href="#chamber">챔버 살펴보기</a>
+        <a class="btn light" href="#farm">1호점 구상 보기</a>
       </div>
-      <dl class="facts-mini">
-        <div><dt>본사</dt><dd>대구광역시 북구</dd></div>
-        <div><dt>설립</dt><dd>2026년 11월</dd></div>
-        <div><dt>핵심 기술</dt><dd>반사 미러 재배기 특허 출원</dd></div>
+      <dl class="hero-stats">
+        <div><dt>챔버 1대 설치면적</dt><dd>2.4m²</dd></div>
+        <div><dt>핵심 기술</dt><dd>반사 미러 특허 출원</dd></div>
+        <div><dt>첫 실증지</dt><dd>대구광역시</dd></div>
       </dl>
     </div>
-    <div class="hero-art">
-<svg class="chamber" viewBox="0 0 360 520" role="img" aria-labelledby="chamber-title chamber-desc" xmlns="http://www.w3.org/2000/svg">
-<title id="chamber-title">솔라움 AI 바이오 챔버 단면</title>
-<desc id="chamber-desc">세 단의 재배칸마다 위쪽 LED 빛이 양옆 반사 거울에 부딪혀 가장자리 상추까지 고르게 닿는 모습</desc>
-<defs>
-
-<symbol id="lettuce" viewBox="-32 -34 64 36" overflow="visible">
-  <ellipse cx="-17" cy="-7" rx="15" ry="7.5" transform="rotate(-22 -17 -7)" fill="#5C9C45"/>
-  <ellipse cx="17" cy="-7" rx="15" ry="7.5" transform="rotate(22 17 -7)" fill="#5C9C45"/>
-  <ellipse cx="-9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
-  <ellipse cx="9" cy="-15" rx="12" ry="12.5" fill="#7DBB5A"/>
-  <ellipse cx="0" cy="-20" rx="10.5" ry="12" fill="#A3D47B"/>
-  <path d="M0 -5 C 1 -12, -1 -20, 0 -28" stroke="#5C9C45" stroke-width="1.2" fill="none"/>
-</symbol>
-<symbol id="lettuce-dim" viewBox="-32 -34 64 36" overflow="visible">
-  <ellipse cx="-17" cy="-7" rx="13" ry="6.5" transform="rotate(-22 -17 -7)" fill="#3E5C38"/>
-  <ellipse cx="17" cy="-7" rx="13" ry="6.5" transform="rotate(22 17 -7)" fill="#3E5C38"/>
-  <ellipse cx="-8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
-  <ellipse cx="8" cy="-13" rx="10" ry="10.5" fill="#4F7344"/>
-  <ellipse cx="0" cy="-17" rx="9" ry="10" fill="#668C52"/>
-</symbol>
-
-
-<linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#E05AA4" stop-opacity=".34"/>
-  <stop offset="1" stop-color="#E05AA4" stop-opacity="0"/>
-</linearGradient>
-<filter id="glow" x="-50%" y="-300%" width="200%" height="700%">
-  <feGaussianBlur stdDeviation="5"/>
-</filter>
-<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-  <stop offset="0" stop-color="#fff" stop-opacity=".07"/>
-  <stop offset=".45" stop-color="#fff" stop-opacity="0"/>
-</linearGradient>
-</defs>
-<rect x="8" y="8" width="344" height="504" rx="16" fill="#2A3530"/>
-<rect x="26" y="26" width="308" height="468" rx="6" fill="#16201B"/>
-<rect x="26" y="26" width="308" height="34" fill="#202B26"/>
-<rect x="44" y="36" width="64" height="14" rx="3" fill="#0F1713"/>
-<rect x="49" y="40" width="30" height="6" rx="1.5" fill="#6FBF8A" opacity=".8"/>
-<circle cx="292" cy="43" r="3" fill="#6FBF8A"/>
-<circle cx="304" cy="43" r="3" fill="#6FBF8A"/>
-<circle cx="316" cy="43" r="3" fill="#E0B34E"/>
-<g class="tier" style="--d:0.00s">
-<polygon class="cone" points="112,77 248,77 304,160 56,160" fill="url(#cone)"/>
-<line x1="34" y1="70" x2="66" y2="106" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<line x1="326" y1="70" x2="294" y2="106" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<path class="ray" d="M150 78 L136 142" pathLength="1"/>
-<path class="ray" d="M180 78 L180 140" pathLength="1"/>
-<path class="ray" d="M210 78 L224 142" pathLength="1"/>
-<path class="ray" d="M122 78 L47 84 L72 140" pathLength="1"/>
-<path class="ray" d="M238 78 L313 84 L288 140" pathLength="1"/>
-<rect class="led-glow" x="104" y="66" width="152" height="14" rx="7" fill="#F07BBD" filter="url(#glow)"/>
-<rect x="110" y="70" width="140" height="7" rx="3.5" fill="#FCE6F2"/>
-<use href="#lettuce" x="38.4" y="124.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="102.4" y="124.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="190.4" y="124.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="254.4" y="124.3" width="67.2" height="37.8"/>
-<rect x="38" y="160" width="284" height="8" rx="2" fill="#3C4943"/>
-<rect x="38" y="168" width="284" height="15" rx="2" fill="#2C3732"/>
-<rect x="164" y="173" width="32" height="4" rx="2" fill="#8C9C95"/>
-</g>
-<g class="tier" style="--d:0.28s">
-<polygon class="cone" points="112,207 248,207 304,290 56,290" fill="url(#cone)"/>
-<line x1="34" y1="200" x2="66" y2="236" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<line x1="326" y1="200" x2="294" y2="236" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<path class="ray" d="M150 208 L136 272" pathLength="1"/>
-<path class="ray" d="M180 208 L180 270" pathLength="1"/>
-<path class="ray" d="M210 208 L224 272" pathLength="1"/>
-<path class="ray" d="M122 208 L47 214 L72 270" pathLength="1"/>
-<path class="ray" d="M238 208 L313 214 L288 270" pathLength="1"/>
-<rect class="led-glow" x="104" y="196" width="152" height="14" rx="7" fill="#F07BBD" filter="url(#glow)"/>
-<rect x="110" y="200" width="140" height="7" rx="3.5" fill="#FCE6F2"/>
-<use href="#lettuce" x="38.4" y="254.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="102.4" y="254.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="190.4" y="254.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="254.4" y="254.3" width="67.2" height="37.8"/>
-<rect x="38" y="290" width="284" height="8" rx="2" fill="#3C4943"/>
-<rect x="38" y="298" width="284" height="15" rx="2" fill="#2C3732"/>
-<rect x="164" y="303" width="32" height="4" rx="2" fill="#8C9C95"/>
-</g>
-<g class="tier" style="--d:0.56s">
-<polygon class="cone" points="112,337 248,337 304,420 56,420" fill="url(#cone)"/>
-<line x1="34" y1="330" x2="66" y2="366" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<line x1="326" y1="330" x2="294" y2="366" stroke="#C9D4D0" stroke-width="4" stroke-linecap="round"/>
-<path class="ray" d="M150 338 L136 402" pathLength="1"/>
-<path class="ray" d="M180 338 L180 400" pathLength="1"/>
-<path class="ray" d="M210 338 L224 402" pathLength="1"/>
-<path class="ray" d="M122 338 L47 344 L72 400" pathLength="1"/>
-<path class="ray" d="M238 338 L313 344 L288 400" pathLength="1"/>
-<rect class="led-glow" x="104" y="326" width="152" height="14" rx="7" fill="#F07BBD" filter="url(#glow)"/>
-<rect x="110" y="330" width="140" height="7" rx="3.5" fill="#FCE6F2"/>
-<use href="#lettuce" x="38.4" y="384.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="102.4" y="384.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="190.4" y="384.3" width="67.2" height="37.8"/>
-<use href="#lettuce" x="254.4" y="384.3" width="67.2" height="37.8"/>
-<rect x="38" y="420" width="284" height="8" rx="2" fill="#3C4943"/>
-<rect x="38" y="428" width="284" height="15" rx="2" fill="#2C3732"/>
-<rect x="164" y="433" width="32" height="4" rx="2" fill="#8C9C95"/>
-</g>
-<rect x="26" y="450" width="308" height="44" fill="#202B26"/>
-<rect x="44" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="56" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="68" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="80" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="92" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="104" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="116" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="232" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="244" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="256" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="268" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="280" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="292" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<rect x="304" y="462" width="6" height="20" rx="3" fill="#2E3B35"/>
-<circle cx="180" cy="472" r="15" fill="#2E3B35"/>
-<g fill="#4A5A53"><ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(0 180 472)"/><ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(90 180 472)"/><ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(180 180 472)"/><ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(270 180 472)"/></g>
-<circle cx="180" cy="472" r="3" fill="#8C9C95"/>
-<rect x="8" y="8" width="344" height="504" rx="16" fill="url(#glass)" pointer-events="none"/>
-</svg>
-    </div>
-  </div>
-</section>
-
-<section class="block alt" id="why" aria-labelledby="why-h">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2 id="why-h">채소는 날씨에 가장 먼저 흔들립니다</h2>
-      <p class="lead">농업 인력과 농지는 줄고 폭염은 길어지는데, 소비자가 낸 농산물 값의 절반은 유통비용입니다. 그사이 도시에는 빈 점포가 늘고 있습니다.</p>
-    </div>
-    <ol class="facts">
-      <li>
-        <div class="num">12.4<span>%</span></div>
-        <div><h3>한 달 새 오른 채소 값</h3><p>2026년 8월 채소류 소비자물가는 전월보다 12.4% 올랐습니다. 상추 28.4%, 시금치 68.2%. 잎채소일수록 폭염과 가뭄이 곧바로 가격으로 옮겨집니다.</p></div>
-      </li>
-      <li>
-        <div class="num">49.2<span>%</span></div>
-        <div><h3>소비자 가격 중 유통비용</h3><p>2023년 농산물 평균입니다. 배추·무 같은 엽근채소는 64.3%로, 산지에서 식탁까지 단계마다 비용과 손실이 쌓입니다.</p></div>
-      </li>
-      <li>
-        <div class="num">14.7<span>%</span></div>
-        <div><h3>전국 중대형 상가 공실률</h3><p>2026년 3분기 기준입니다. 첫 실증지인 대구는 19.6%로 전국보다 4.9%p 높습니다. 비어 있는 공간이 소비자 가장 가까이에 있습니다.</p></div>
-      </li>
-      <li>
-        <div class="num">51.0<span>%</span></div>
-        <div><h3>65세 이상 농림어가 인구</h3><p>2025년 농림어가 인구의 절반 이상이 65세 이상입니다. 노동집약적인 채소 생산을 지금 방식으로 이어가기 어려워지고 있습니다.</p></div>
-      </li>
-    </ol>
-    <p class="src small">자료: 2026년 8월 소비자물가동향, 2023년 농산물 유통실태조사, 2026년 3분기 상업용부동산 임대동향, 2025년 농림어업총조사. 세부 출처는 페이지 하단에 있습니다.</p>
-  </div>
-</section>
-
-<section class="block" id="chamber" aria-labelledby="chamber-h">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2 id="chamber-h">냉장고 크기의 재배실, 설치면적 2.4m²</h2>
-      <p class="lead">여러 단의 재배칸에 빛, 양액, 공기를 PLC와 AI가 함께 관리합니다. 상가 한 칸이나 폐교 교실에 들여놓을 수 있는 크기입니다.</p>
-    </div>
-    <div class="chamber-grid">
-      <div><svg class="blueprint" viewBox="-40 0 470 520" role="img" aria-labelledby="bp-title" xmlns="http://www.w3.org/2000/svg">
-<title id="bp-title">챔버 구성 요소 도면: 1 LED 조명, 2 반사 미러, 3 재배 트레이, 4 서랍식 양액 모듈, 5 센서, 6 공조부, 7 PLC와 엣지 AI</title>
-<g fill="none" stroke="#2E7A4C" stroke-width="1.5" stroke-linejoin="round">
-<rect x="8" y="8" width="344" height="504" rx="16"/>
-<rect x="26" y="26" width="308" height="468" rx="6"/>
-<line x1="26" y1="60" x2="334" y2="60"/>
-<line x1="26" y1="450" x2="334" y2="450"/>
-<rect x="44" y="36" width="64" height="14" rx="3"/>
-<rect x="110" y="70" width="140" height="7" rx="3.5"/>
-<line x1="34" y1="70" x2="66" y2="106" stroke-width="3" stroke-linecap="round"/>
-<line x1="326" y1="70" x2="294" y2="106" stroke-width="3" stroke-linecap="round"/>
-<rect x="38" y="160" width="284" height="8" rx="2"/>
-<rect x="38" y="168" width="284" height="15" rx="2"/>
-<rect x="164" y="173" width="32" height="4" rx="2"/>
-<path d="M48 160 C 50 144, 64 132, 72 130 C 80 132, 94 144, 96 160"/>
-<path d="M72 160 L72 136" stroke-width="1"/>
-<path d="M112 160 C 114 144, 128 132, 136 130 C 144 132, 158 144, 160 160"/>
-<path d="M136 160 L136 136" stroke-width="1"/>
-<path d="M200 160 C 202 144, 216 132, 224 130 C 232 132, 246 144, 248 160"/>
-<path d="M224 160 L224 136" stroke-width="1"/>
-<path d="M264 160 C 266 144, 280 132, 288 130 C 296 132, 310 144, 312 160"/>
-<path d="M288 160 L288 136" stroke-width="1"/>
-<rect x="110" y="200" width="140" height="7" rx="3.5"/>
-<line x1="34" y1="200" x2="66" y2="236" stroke-width="3" stroke-linecap="round"/>
-<line x1="326" y1="200" x2="294" y2="236" stroke-width="3" stroke-linecap="round"/>
-<rect x="38" y="290" width="284" height="8" rx="2"/>
-<rect x="38" y="298" width="284" height="15" rx="2"/>
-<rect x="164" y="303" width="32" height="4" rx="2"/>
-<path d="M48 290 C 50 274, 64 262, 72 260 C 80 262, 94 274, 96 290"/>
-<path d="M72 290 L72 266" stroke-width="1"/>
-<path d="M112 290 C 114 274, 128 262, 136 260 C 144 262, 158 274, 160 290"/>
-<path d="M136 290 L136 266" stroke-width="1"/>
-<path d="M200 290 C 202 274, 216 262, 224 260 C 232 262, 246 274, 248 290"/>
-<path d="M224 290 L224 266" stroke-width="1"/>
-<path d="M264 290 C 266 274, 280 262, 288 260 C 296 262, 310 274, 312 290"/>
-<path d="M288 290 L288 266" stroke-width="1"/>
-<rect x="110" y="330" width="140" height="7" rx="3.5"/>
-<line x1="34" y1="330" x2="66" y2="366" stroke-width="3" stroke-linecap="round"/>
-<line x1="326" y1="330" x2="294" y2="366" stroke-width="3" stroke-linecap="round"/>
-<rect x="38" y="420" width="284" height="8" rx="2"/>
-<rect x="38" y="428" width="284" height="15" rx="2"/>
-<rect x="164" y="433" width="32" height="4" rx="2"/>
-<path d="M48 420 C 50 404, 64 392, 72 390 C 80 392, 94 404, 96 420"/>
-<path d="M72 420 L72 396" stroke-width="1"/>
-<path d="M112 420 C 114 404, 128 392, 136 390 C 144 392, 158 404, 160 420"/>
-<path d="M136 420 L136 396" stroke-width="1"/>
-<path d="M200 420 C 202 404, 216 392, 224 390 C 232 392, 246 404, 248 420"/>
-<path d="M224 420 L224 396" stroke-width="1"/>
-<path d="M264 420 C 266 404, 280 392, 288 390 C 296 392, 310 404, 312 420"/>
-<path d="M288 420 L288 396" stroke-width="1"/>
-<rect x="314" y="258" width="14" height="20" rx="3"/>
-<circle cx="321" cy="264" r="2.5"/>
-<circle cx="180" cy="472" r="15"/>
-<ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(0 180 472)"/>
-<ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(90 180 472)"/>
-<ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(180 180 472)"/>
-<ellipse cx="180" cy="465" rx="4" ry="7" transform="rotate(270 180 472)"/>
-</g>
-<g fill="none" stroke="#2E7A4C" stroke-width="1.2" stroke-dasharray="4 5" opacity=".6"><path d="M31 444 L31 344"/><path d="M329 444 L329 344"/></g>
-<g fill="#2E7A4C" opacity=".6"><path d="M27 348 L31 338 L35 348Z"/><path d="M325 348 L329 338 L333 348Z"/></g>
-<g class="callouts">
-<path d="M250 73.5 L368 74" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="250" cy="73.5" r="2.5" fill="#2E7A4C"/>
-<circle cx="378" cy="74" r="11" fill="#2E7A4C"/>
-<text x="378" y="78.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">1</text>
-<path d="M40 78 L-8 96" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="40" cy="78" r="2.5" fill="#2E7A4C"/>
-<circle cx="-18" cy="96" r="11" fill="#2E7A4C"/>
-<text x="-18" y="100.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">2</text>
-<path d="M38 294 L-8 294" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="38" cy="294" r="2.5" fill="#2E7A4C"/>
-<circle cx="-18" cy="294" r="11" fill="#2E7A4C"/>
-<text x="-18" y="298.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">3</text>
-<path d="M322 309.5 L368 330" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="322" cy="309.5" r="2.5" fill="#2E7A4C"/>
-<circle cx="378" cy="330" r="11" fill="#2E7A4C"/>
-<text x="378" y="334.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">4</text>
-<path d="M328 268 L368 268" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="328" cy="268" r="2.5" fill="#2E7A4C"/>
-<circle cx="378" cy="268" r="11" fill="#2E7A4C"/>
-<text x="378" y="272.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">5</text>
-<path d="M195 472 L368 472" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="195" cy="472" r="2.5" fill="#2E7A4C"/>
-<circle cx="378" cy="472" r="11" fill="#2E7A4C"/>
-<text x="378" y="476.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">6</text>
-<path d="M108 43 L-8 43" stroke="#2E7A4C" stroke-width="1" fill="none"/>
-<circle cx="108" cy="43" r="2.5" fill="#2E7A4C"/>
-<circle cx="-18" cy="43" r="11" fill="#2E7A4C"/>
-<text x="-18" y="47.5" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">7</text>
-</g>
-</svg></div>
-      <div>
-        <ol class="parts">
-          <li><div><b>LED 조명</b><span>단마다 작물 위에 두고 광량과 빛 색을 조절합니다.</span></div></li>
-          <li><div><b>반사 미러</b><span>LED 둘레의 각도 조절 거울이 벽으로 새는 빛을 작물 쪽으로 되돌립니다. 특허 출원 기술입니다.</span></div></li>
-          <li><div><b>재배 트레이</b><span>바닥 구멍으로 아래 양액과 이어집니다.</span></div></li>
-          <li><div><b>서랍식 양액 모듈</b><span>손잡이로 넣고 빼는 구조라 수확과 양액 교체가 쉽습니다.</span></div></li>
-          <li><div><b>센서</b><span>광량, CO₂, 습도, 온도를 재고 EC·pH와 카메라로 확장합니다.</span></div></li>
-          <li><div><b>공조부</b><span>팬·히터·가습기로 공기를 아래에서 위로 순환시킵니다.</span></div></li>
-          <li><div><b>PLC와 엣지 AI</b><span>PLC는 실시간 제어와 안전 차단을, AI는 예측과 설정값 결정을 맡습니다. 휴대폰으로 원격 확인합니다.</span></div></li>
-        </ol>
-        <p class="spec small">기준 사양 1.2 × 0.8 × 2.1m, LED 240~360W. 시제품 실증을 거쳐 확정합니다.</p>
+    <div class="hero-media">
+      <div class="photo">
+        <img src="img/farm-aisle.webp" srcset="img/farm-aisle-800.webp 800w, img/farm-aisle.webp 1586w" sizes="(max-width: 920px) 100vw, 640px" width="1586" height="992" alt="솔라움 챔버가 양쪽으로 늘어선 실내 농장 통로에서 작업자가 챔버를 확인하는 모습(콘셉트 렌더링)" loading="eager" decoding="async" fetchpriority="high">
+        <span class="tag-render">콘셉트 렌더링</span>
+        <span class="chip-float"><i class="dot"></i>솔라움 실내 농장</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block alt" id="tech" aria-labelledby="tech-h">
+<section class="sec" id="why" data-nav="why" aria-labelledby="why-h">
   <div class="wrap">
     <div class="sec-head">
-      <h2 id="tech-h">모든 포기에 같은 빛, 작물마다 다른 레시피</h2>
+      <h2 id="why-h">채소는 날씨에 가장 먼저 흔들립니다.</h2>
+      <p class="lead">농업 인력과 농지는 줄고 폭염은 길어지는데, 소비자가 낸 농산물 값의 절반은 유통비용입니다. 그사이 도시에는 빈 점포가 늘고 있습니다.</p>
     </div>
-    <div class="tech">
-      <div class="tech-row">
-        <div>
-          <h3>거울로 빛을 되돌립니다</h3>
-          <p>LED를 위에만 두면 작물이 자랄수록 잎이 빛을 가려, 가장자리와 아래 잎이 덜 자라고 상품률이 떨어집니다.</p>
-          <p>솔라움 챔버는 LED 둘레에 경사각을 조절하는 거울을 두어 벽으로 새던 빛을 작물에 다시 보냅니다. 평면·볼록·오목 거울을 골라 작물 키에 맞게 빛이 닿는 범위를 바꿉니다.</p>
-          <p class="muted small">조명을 작물 가까이 두고 반사 커튼으로 재배칸을 감싸면 에너지 이용효율이 높아진다는 연구가 있습니다(Frontiers in Plant Science, 2023).</p>
-          <span class="badge">2026년 7월 특허 출원, 심사청구 완료</span>
-        </div>
-        <div class="compare">
-          <figure>
-            <svg viewBox="0 0 320 180" role="img" aria-label="위쪽 LED만 있을 때: 가장자리 상추에 그늘이 짐" xmlns="http://www.w3.org/2000/svg">
+    <div class="grid g4">
+      <article class="card stat"><div class="num">12.4<small>%</small></div><h3>한 달 새 오른 채소 값</h3><p>2026년 8월 채소류 소비자물가가 전월보다 12.4% 올랐습니다. 상추 28.4%, 시금치 68.2%.</p></article>
+      <article class="card stat"><div class="num">49.2<small>%</small></div><h3>소비자 가격 중 유통비용</h3><p>2023년 농산물 평균입니다. 배추·무 같은 엽근채소는 64.3%에 이릅니다.</p></article>
+      <article class="card stat"><div class="num">14.7<small>%</small></div><h3>전국 중대형 상가 공실률</h3><p>2026년 3분기 기준입니다. 첫 실증지 대구는 19.6%로 전국보다 4.9%p 높습니다.</p></article>
+      <article class="card stat"><div class="num">51.0<small>%</small></div><h3>65세 이상 농림어가 인구</h3><p>2025년 농림어가 인구의 절반 이상이 65세 이상입니다. 노동집약적 채소 생산이 갈수록 어려워집니다.</p></article>
+    </div>
+    <p class="src small">자료: 2026년 8월 소비자물가동향, 2023년 농산물 유통실태조사, 2026년 3분기 상업용부동산 임대동향, 2025년 농림어업총조사</p>
+  </div>
+</section>
+
+<section class="sec tint" id="chamber" data-nav="chamber" aria-labelledby="chamber-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="chamber-h">One Chamber,<br>Every Condition.</h2>
+      <p class="lead">설치면적 2.4m²의 냉장고형 캐비닛 안에서 빛, 양액, 공기를 PLC와 AI가 함께 관리합니다. 날씨와 상관없이 작물마다 맞는 조건을 만듭니다.</p>
+    </div>
+    <div class="photo">
+      <img src="img/chamber-detail.webp" srcset="img/chamber-detail-800.webp 800w, img/chamber-detail.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="솔라움 AI 바이오 챔버 근접 모습. 상태 디스플레이, 단별 LED 광원, 반사 미러 내벽, 다단 재배칸, PLC 제어반과 양액 공급부, 바닥 상태등이 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async">
+      <span class="tag-render">콘셉트 렌더링</span>
+    </div>
+    <div class="card specbar row-gap">
+      <dl>
+        <div><dt>크기</dt><dd>1.2 × 0.8 × 2.1m</dd></div>
+        <div><dt>설치면적</dt><dd>2.4m²</dd></div>
+        <div><dt>조명</dt><dd>LED 240~360W</dd></div>
+        <div><dt>목표 광량</dt><dd>200~300 µmol/m²/s</dd></div>
+        <div><dt>재배 방식</dt><dd>다단 순환식 수경재배</dd></div>
+        <div><dt>제어</dt><dd>PLC + 엣지 AI</dd></div>
+      </dl>
+      <p class="small muted">기준 사양이며 시제품 실증을 거쳐 확정합니다.</p>
+    </div>
+    <div class="grid g5 row-gap">
+      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="3" rx="1.5"/><path d="M7 11v2M12 11v3M17 11v2M9 18h6"/></svg></div><h4>단별 LED 광원</h4><p>단마다 작물 바로 위에서 광량과 빛 색을 조절합니다.</p></article>
+      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l5 6M20 4l-5 6"/><path d="M12 6v12M8 18h8"/><path d="M9 10l3 3 3-3"/></svg></div><h4>반사 미러 내벽</h4><p>벽으로 새는 빛을 작물 쪽으로 되돌립니다. 특허 출원 기술입니다.</p></article>
+      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M4 9h16M4 15h16"/></svg></div><h4>다단 재배</h4><p>생육 단계별로 단을 나눠 좁은 면적을 높이로 씁니다.</p></article>
+      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M10 12h4"/></svg></div><h4>서랍식 양액 모듈</h4><p>손잡이로 넣고 빼는 구조라 수확과 양액 교체가 쉽습니다.</p></article>
+      <article class="card feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M7 13l3-3 3 2 4-4M9 20h6"/></svg></div><h4>상태 표시와 원격 확인</h4><p>온도, 습도, CO₂를 문 앞 화면과 휴대폰으로 확인합니다.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec glow" id="tech" data-nav="tech" aria-labelledby="tech-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="tech-h">Light, Reflected.</h2>
+      <p class="lead">LED를 위에만 두면 작물이 자랄수록 잎이 빛을 가려 가장자리와 아래 잎이 덜 자랍니다. 솔라움 챔버는 LED 둘레의 거울로 벽에 새던 빛을 작물에 되돌리고, 거울의 경사각과 곡면으로 작물 키에 맞게 반사 범위를 바꿉니다.</p>
+    </div>
+    <div class="grid g3 compare">
+      <figure class="card">
+        <svg viewBox="0 0 320 180" role="img" aria-label="위쪽 LED만 있을 때: 가장자리 상추에 그늘이 짐" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="cone2n" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
 <polygon points="118,30 202,30 236,152 84,152" fill="url(#cone2n)"/>
@@ -595,10 +441,10 @@ footer .copy{grid-column:1/-1;margin-top:8px}
 <use href="#ldcone2n" x="234.0" y="114.0" width="68" height="38"/>
 <rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
 </svg>
-            <figcaption>위쪽 LED만<span>가장자리 포기에 그늘이 집니다</span></figcaption>
-          </figure>
-          <figure>
-            <svg viewBox="0 0 320 180" role="img" aria-label="반사 거울이 있을 때: 가장자리 상추까지 빛이 닿음" xmlns="http://www.w3.org/2000/svg">
+        <figcaption><b>위쪽 LED만</b><span>빛이 가운데에 몰리고 가장자리 포기에 그늘이 집니다.</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 320 180" role="img" aria-label="반사 거울이 있을 때: 가장자리 상추까지 빛이 닿음" xmlns="http://www.w3.org/2000/svg">
 <defs><linearGradient id="cone2m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E05AA4" stop-opacity=".32"/><stop offset="1" stop-color="#E05AA4" stop-opacity="0"/></linearGradient></defs>
 <rect x="0" y="0" width="320" height="180" rx="10" fill="#16201B"/>
 <polygon points="118,30 202,30 300,152 20,152" fill="url(#cone2m)"/>
@@ -634,111 +480,187 @@ footer .copy{grid-column:1/-1;margin-top:8px}
 <use href="#lcone2m" x="234.0" y="114.0" width="68" height="38"/>
 <rect x="10" y="152" width="300" height="10" rx="2" fill="#3C4943"/>
 </svg>
-            <figcaption>반사 미러 적용<span>벽으로 새던 빛이 가장자리에 닿습니다</span></figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="tech-row">
-        <div>
-          <h3>PLC가 지키고, AI가 판단합니다</h3>
-          <p>챔버마다 붙는 엣지 AI가 24시간 환경과 수확 무게를 예측하고, 작물별 양액 조성과 빛 색, 광주기, 온습도와 CO₂ 설정값을 정합니다.</p>
-          <p>실시간 제어와 과열·누수·정전 차단은 PLC가 맡습니다. AI는 설정값만 바꿀 수 있고, 통신이 끊기면 PLC가 안전 레시피로 돌아갑니다. 학습 오류가 설비 사고로 이어지지 않게 하는 구조입니다.</p>
-        </div>
-        <div class="layers" role="group" aria-label="제어 구조: AI, PLC, 센서와 구동기">
-          <div class="layer ai"><b>엣지 AI</b><span>환경·생육 예측, 작물별 설정값 결정, 휴대폰 알림</span></div>
-          <div class="link"><div><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 설정값</div><div><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 측정값·운전 기록</div></div>
-          <div class="layer plc"><b>PLC</b><span>실시간 제어 루프, 과열·누수·정전 시 즉시 차단(AI가 바꿀 수 없음)</span></div>
-          <div class="link"><div><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 구동 명령</div><div><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 센서 값</div></div>
-          <div class="layer"><b>센서와 구동기</b><span>광량·CO₂·온습도·EC·pH / LED·팬·양액 펌프·밸브</span></div>
-        </div>
-      </div>
-
-      <div class="tech-row single">
-        <div>
-          <h3>성분을 조절하는 재배 레시피</h3>
-          <p>같은 상추라도 양액과 빛을 바꾸면 성분이 달라집니다. 솔라움은 연구로 근거가 확인된 레시피부터 챔버에서 검증해, 식당과 급식 현장의 요구에 맞춘 채소를 공급하려 합니다.</p>
-        </div>
-        <div>
-          <table class="recipes">
-            <thead><tr><th scope="col">제품</th><th scope="col">조절 방법</th><th scope="col">근거</th></tr></thead>
-            <tbody>
-              <tr><td>칼륨을 낮춘 상추</td><td data-label="조절 방법">수확 2주 전 양액의 칼륨 농도를 낮춤</td><td data-label="근거">잎 칼륨 함량이 대조구보다 유의하게 낮음 (안동대, 2018)</td></tr>
-              <tr><td>안토시아닌을 높인 상추</td><td data-label="조절 방법">적색·청색 혼합광으로 빛 색 조절</td><td data-label="근거">적색광 단독 대비 4.1배 (국립원예특작과학원, 2010)</td></tr>
-              <tr><td>비타민C를 높인 상추</td><td data-label="조절 방법">UV-A 보광, 광주기 조절</td><td data-label="근거">광주기에 따라 아스코르빈산 함량 변화 (전북대, 2016)</td></tr>
-            </tbody>
-          </table>
-          <p class="note">일반 식품으로서 질병의 예방이나 치료 효능을 표방하지 않으며, 제품화할 때는 성분 함량 표시 기준을 따릅니다.</p>
-        </div>
+        <figcaption><b>반사 미러 적용</b><span>벽으로 새던 빛이 가장자리 포기까지 닿습니다.</span></figcaption>
+      </figure>
+      <div class="card patent">
+        <h3>특허 출원</h3>
+        <dl>
+          <dt>발명의 명칭</dt><dd>인공지능을 이용한 실내용 LED 식물 재배기</dd>
+          <dt>출원</dt><dd>2026년 7월, 심사청구 완료</dd>
+          <dt>해외 출원</dt><dd>PCT 우선권 주장 기한 2027년 7월</dd>
+        </dl>
+        <p>조명을 작물 가까이 두고 반사 커튼으로 재배칸을 감싸면 에너지 이용효율이 높아진다는 연구가 있습니다(Frontiers in Plant Science, 2023).</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block" id="model" aria-labelledby="model-h">
+<section class="sec tint" id="ai" data-nav="tech" aria-labelledby="ai-h">
   <div class="wrap">
     <div class="sec-head">
-      <h2 id="model-h">기른 자리에서 바로 팝니다</h2>
-      <p class="lead">빈 상가에 챔버를 놓고, 수확한 채소를 그 자리에서 판매합니다. 산지에서 식탁까지 네다섯 단계를 거치던 유통이 한 단계로 줄어듭니다.</p>
+      <h2 id="ai-h">Sensed by PLC.<br>Decided by AI.</h2>
+      <p class="lead">챔버마다 붙는 엣지 AI가 24시간 환경과 수확 무게를 예측해 설정값을 정하고, 실시간 제어와 안전 차단은 PLC가 맡습니다. 통신이 끊기면 PLC가 안전 레시피로 돌아갑니다.</p>
     </div>
-    <div class="flow">
-      <div class="flow-row">
-        <b>기존 유통</b>
-        <ol class="chain"><li><span>농가</span></li><li><span>산지 수집</span></li><li><span>도매시장</span></li><li><span>중도매·소매</span></li><li><span>소비자</span></li></ol>
+    <div class="split top">
+      <figure style="margin:0">
+        <div class="photo">
+          <img src="img/control-room.webp" srcset="img/control-room-800.webp 800w, img/control-room.webp 1586w" sizes="(max-width: 920px) 100vw, 740px" width="1586" height="992" alt="솔라움 AI 재배 관제실. 대형 화면에 챔버별 온습도와 24시간 예측 그래프가 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async">
+          <span class="tag-render">콘셉트 렌더링</span>
+        </div>
+        <figcaption class="cap">AI 관제 화면 구상입니다. 화면 속 수치는 예시입니다.</figcaption>
+      </figure>
+      <div class="card raised">
+        <h3 style="margin-bottom:20px">제어 구조</h3>
+        <div class="layers" role="group" aria-label="제어 구조: 엣지 AI, PLC, 센서와 구동기">
+          <div class="layer ai"><b>엣지 AI</b><span>환경·생육 예측, 작물별 설정값 결정, 이상 알림</span></div>
+          <div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 설정값</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 측정값·운전 기록</span></div>
+          <div class="layer plc"><b>PLC</b><span>실시간 제어, 과열·누수·정전 즉시 차단. 안전 로직은 AI가 바꿀 수 없습니다.</span></div>
+          <div class="flowline"><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 0v10M1 7l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 구동 명령</span><span><svg width="10" height="12" viewBox="0 0 10 12" aria-hidden="true"><path d="M5 12V2M1 5l4-4 4 4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 센서 값</span></div>
+          <div class="layer"><b>센서와 구동기</b><span>광량·CO₂·온습도·EC·pH, LED·팬·양액 펌프·밸브</span></div>
+        </div>
       </div>
-      <div class="flow-row">
-        <b>솔라움</b>
-        <ol class="chain ours"><li><span>상가 속 챔버</span></li><li><span>소비자</span></li></ol>
-      </div>
-      <p class="flow-note">수확 당일 판매하므로 신선도 유지에 드는 비용과 손실이 줄어듭니다. 실제 원가와 이익률은 2027년 실증에서 측정해 공개합니다.</p>
     </div>
-    <div class="who">
-      <div><h3>도심 소비자</h3><p>상가 마이크로팜에서 수확 당일 채소를 삽니다. 2027년 4분기 대구 1호점을 열 계획입니다.</p></div>
-      <div><h3>식당, 카페, 병원, 요양시설</h3><p>필요한 품목과 성분 조건에 맞춘 채소를 정기적으로 공급받습니다.</p></div>
-      <div><h3>연구·교육기관, 소규모 재배사</h3><p>2.4m² 챔버와 원격 모니터링, 레시피 갱신, 생육 예측을 묶은 AI 운영 서비스를 도입합니다.</p></div>
-      <div><h3>공공기관과 지자체</h3><p>빈 상가와 미활용 폐교를 실증 거점으로 함께 검증하고, 현장 재배 데이터를 공유합니다.</p></div>
+    <div class="card table-card row-gap">
+      <div style="padding:clamp(24px,2.6vw,34px) clamp(24px,2.6vw,34px) 18px">
+        <h3 style="margin-bottom:8px">성분을 조절하는 재배 레시피</h3>
+        <p class="muted small">같은 상추라도 양액과 빛을 바꾸면 성분이 달라집니다. 연구로 근거가 확인된 레시피부터 챔버에서 검증합니다.</p>
+      </div>
+      <table class="tbl">
+        <thead><tr><th scope="col">제품</th><th scope="col">조절 방법</th><th scope="col">근거</th><th scope="col">상태</th></tr></thead>
+        <tbody>
+          <tr><td>칼륨을 낮춘 상추</td><td data-label="조절 방법">수확 2주 전 양액의 칼륨 농도를 낮춤</td><td data-label="근거">잎 칼륨 함량이 대조구보다 유의하게 낮음 (안동대, 2018)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr>
+          <tr><td>안토시아닌을 높인 상추</td><td data-label="조절 방법">적색·청색 혼합광으로 빛 색 조절</td><td data-label="근거">적색광 단독 대비 4.1배 (국립원예특작과학원, 2010)</td><td data-label="상태"><span class="pill plan">2027 검증</span></td></tr>
+          <tr><td>비타민C를 높인 상추</td><td data-label="조절 방법">UV-A 보광, 광주기 조절</td><td data-label="근거">광주기에 따라 아스코르빈산 함량 변화 (전북대, 2016)</td><td data-label="상태"><span class="pill plan">검토</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">일반 식품으로서 질병의 예방이나 치료 효능을 표방하지 않으며, 제품화할 때는 성분 함량 표시 기준을 따릅니다.</p>
+  </div>
+</section>
+
+<section class="sec glow" id="farm" data-nav="farm" aria-labelledby="farm-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="farm-h">First Site:<br>Daegu Micro Farm</h2>
+      <p class="lead">2027년 4분기 대구 상가에 여는 1호점 구상입니다. 챔버에서 기른 채소를 그 자리에서 수확·포장해 판매하고, 견학과 실증 데이터 수집도 함께 합니다.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="1호점 구상 보기"><button role="tab" id="tab-0" aria-controls="farm-panel" aria-selected="true" tabindex="0" data-img="microfarm-aerial-labeled" data-alt="대구 상가 마이크로팜 1호점 조감도. 브랜드 모스월, AI 바이오 챔버 존, PLC 제어반과 양액 공급, 육묘 랙과 R&D 벤치, 수확·포장·출하 구역, AI 관제실, 라운지와 견학 동선, 자연채광 창이 표시돼 있다(콘셉트 렌더링)">조감도</button><button role="tab" id="tab-1" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-plan" data-alt="대구 상가 마이크로팜 1호점을 위에서 내려다본 평면 배치도(콘셉트 렌더링)">평면도</button><button role="tab" id="tab-2" aria-controls="farm-panel" aria-selected="false" tabindex="-1" data-img="microfarm-aerial" data-alt="대구 상가 마이크로팜 1호점 전경. 챔버 열과 작업 공간, 관제실이 보인다(콘셉트 렌더링)">전경</button></div>
+    <figure style="margin:0" id="farm-panel" role="tabpanel" aria-labelledby="tab-0">
+      <div class="photo">
+        <img id="farm-img" src="img/microfarm-aerial-labeled.webp" srcset="img/microfarm-aerial-labeled-800.webp 800w, img/microfarm-aerial-labeled.webp 1586w" sizes="(max-width: 1240px) 100vw, 1200px" width="1586" height="992" alt="대구 상가 마이크로팜 1호점 조감도. 브랜드 모스월, AI 바이오 챔버 존, PLC 제어반과 양액 공급, 육묘 랙과 R&D 벤치, 수확·포장·출하 구역, AI 관제실, 라운지와 견학 동선, 자연채광 창이 표시돼 있다(콘셉트 렌더링)" loading="lazy" decoding="async">
+        <span class="tag-render">콘셉트 렌더링</span>
+      </div>
+      <figcaption class="cap">1호점 구상 렌더링입니다. 실제 배치와 챔버 대수는 입지가 정해진 뒤 달라질 수 있습니다.</figcaption>
+    </figure>
+    <div class="zones">
+      <div class="zone"><i class="dot"></i><div><b>AI 바이오 챔버 존</b><span>구상도 기준 24대, 생육 단계별 운영</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>PLC 제어반·양액 공급</b><span>챔버 열마다 제어반과 양액 라인</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>육묘 랙·R&amp;D 벤치</b><span>모종 기르기와 레시피 시험</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>수확·포장·출하</b><span>수확 당일 포장해 매장과 B2B로 출하</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>AI 관제실</b><span>모든 챔버 상태와 예측을 한 화면에서</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>라운지·견학 동선</b><span>방문객과 기관 견학을 위한 동선</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>브랜드 모스월</b><span>매장 안쪽 벽면의 이끼 정원</span></div></div>
+      <div class="zone"><i class="dot"></i><div><b>자연채광 창</b><span>창가 화분 진열과 매장 개방감</span></div></div>
+    </div>
+    <div class="card flow-card">
+      <div>
+        <h3>유통을 한 단계로</h3>
+        <p>엽근채소는 소비자가 낸 값의 64.3%가 유통비용입니다(2023). 솔라움은 생산과 판매를 한 매장에 둡니다. 실제 원가와 이익률은 2027년 실증에서 측정해 공개합니다.</p>
+      </div>
+      <div>
+        <div class="chain-row"><b>기존 유통</b><ol class="chain"><li><span>농가</span></li><li><span>산지 수집</span></li><li><span>도매시장</span></li><li><span>중도매·소매</span></li><li><span>소비자</span></li></ol></div>
+        <div class="chain-row"><b>솔라움</b><ol class="chain ours"><li><span>상가 속 챔버</span></li><li><span>소비자</span></li></ol></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="block alt" id="roadmap" aria-labelledby="roadmap-h">
+<section class="sec tint" id="scale" data-nav="scale" aria-labelledby="scale-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="scale-h">One Module,<br>Many Spaces.</h2>
+      <p class="lead">챔버는 2.4m² 단위 모듈이라 공간 크기에 맞춰 대수만 늘리면 됩니다. 빈 사무실 한 칸부터 물류창고까지 같은 제어 방식으로 운영합니다.</p>
+    </div>
+    <div class="grid g2">
+      <article class="card space">
+        <div class="photo"><img src="img/scale-office.webp" srcset="img/scale-office-800.webp 800w, img/scale-office.webp 1670w" sizes="(max-width: 920px) 100vw, 590px" width="1670" height="942" alt="빈 사무실에 솔라움 챔버 여러 열을 들여놓은 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
+        <div class="body">
+          <h3>도심 상가·유휴 사무실</h3>
+          <p>공실에 챔버 열을 들여 식당, 카페, 급식처 가까이에서 생산합니다.</p>
+          <div class="tags"><span>상가 직판</span><span>식당·카페 정기 공급</span><span>병원·요양시설 급식</span></div>
+        </div>
+      </article>
+      <article class="card space">
+        <div class="photo"><img src="img/scale-warehouse.webp" srcset="img/scale-warehouse-800.webp 800w, img/scale-warehouse.webp 1672w" sizes="(max-width: 920px) 100vw, 590px" width="1672" height="941" alt="물류창고 복층 구조물에 솔라움 챔버를 두 층으로 배치한 모습(콘셉트 렌더링)" loading="lazy" decoding="async"><span class="tag-render">콘셉트 렌더링</span></div>
+        <div class="body">
+          <h3>물류창고·대형 시설</h3>
+          <p>복층 구조물에 챔버를 쌓아 B2B 물량을 생산하고, 같은 AI 관제로 운영합니다.</p>
+          <div class="tags"><span>B2B 대량 공급</span><span>AI 운영 구독</span><span>재배 데이터</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="grid g2 who">
+      <div class="card"><h4>연구·교육기관, 소규모 재배사</h4><p>2.4m² 챔버와 원격 모니터링, 레시피 갱신, 생육 예측을 묶은 AI 운영 서비스를 도입합니다.</p></div>
+      <div class="card"><h4>공공기관과 지자체</h4><p>빈 상가와 미활용 폐교를 실증 거점으로 함께 검증하고, 현장 재배 데이터를 공유합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="roadmap" data-nav="roadmap" aria-labelledby="roadmap-h">
   <div class="wrap">
     <div class="sec-head">
       <h2 id="roadmap-h">지금까지, 그리고 2027년</h2>
       <p class="lead">특허와 법인, 제어 소프트웨어를 갖췄습니다. 2027년 상추 실증으로 성능을 확인한 뒤 대구에 첫 상가 마이크로팜을 엽니다.</p>
     </div>
-    <ol class="timeline">
-      <li class="done"><time>2026년 7월</time><p>반사 미러 AI 재배기 특허 출원, 심사청구</p><span class="state">완료</span></li>
-      <li class="done"><time>2026년 10월</time><p>엣지 AI 제어 소프트웨어 1차 개발, PLC 시뮬레이터 시험 통과</p><span class="state">완료</span></li>
-      <li class="done"><time>2026년 11월</time><p>솔라움 주식회사 설립, 대구 본점</p><span class="state">완료</span></li>
-      <li><time>2027년</time><p>상추 시제품 실증, 같은 조건의 대조 챔버와 비교</p><span class="state">예정</span></li>
-      <li><time>2027년 7월</time><p>PCT 해외 특허 출원</p><span class="state">예정</span></li>
-      <li><time>2027년 4분기</time><p>대구 상가 마이크로팜 1호점 개설</p><span class="state">예정</span></li>
-    </ol>
-    <div class="pledge">
+    <div class="grid g4">
+      <article class="card phase done"><p class="label">1단계</p><p class="when">2026년</p><h3>기반 구축</h3>
+        <ul><li>반사 미러 AI 재배기 특허 출원, 심사청구 (7월)</li><li>엣지 AI 제어 소프트웨어 1차 개발, PLC 시뮬레이터 시험 통과 (10월)</li><li>솔라움 주식회사 설립, 대구 본점 (11월)</li></ul>
+        <span class="pill done">완료</span></article>
+      <article class="card phase"><p class="label">2단계</p><p class="when">2027년</p><h3>상추 실증</h3>
+        <ul><li>시제품 챔버 제작</li><li>같은 품종·조건의 대조 챔버와 비교</li><li>칼륨·안토시아닌 레시피 검증</li></ul>
+        <span class="pill plan">예정</span></article>
+      <article class="card phase"><p class="label">3단계</p><p class="when">2027년</p><h3>해외 특허와 인증</h3>
+        <ul><li>PCT 국제 출원 (우선권 기한 2027년 7월)</li><li>스마트팜 ICT 기자재 국가표준(KS) 검정 추진</li></ul>
+        <span class="pill plan">예정</span></article>
+      <article class="card phase"><p class="label">4단계</p><p class="when">2027년 4분기</p><h3>대구 1호점</h3>
+        <ul><li>상가 마이크로팜 개설</li><li>수확 당일 판매와 B2B 정기 공급 시작</li></ul>
+        <span class="pill plan">예정</span></article>
+    </div>
+    <div class="card pledge">
       <h3>성능은 실측으로 공개합니다</h3>
-      <p class="muted">문헌상 수직농장 상추는 kg당 10~18kWh의 전력이 듭니다. 솔라움은 2027년 실증에서 같은 품종과 조건의 대조 챔버를 두고 kg당 전력, 상품률, 작업시간을 측정해 공개합니다.</p>
+      <p>문헌상 수직농장 상추는 kg당 10~18kWh의 전력이 듭니다. 솔라움은 2027년 실증에서 같은 품종·조건의 대조 챔버를 두고 kg당 전력, 상품률, 작업시간을 측정해 공개합니다.</p>
     </div>
   </div>
 </section>
 
-<section class="block contact" id="contact" aria-labelledby="contact-h">
+<section class="vision" aria-labelledby="vision-h">
   <div class="wrap">
-    <div>
-      <h2 id="contact-h">도입, 공급, 협력 문의</h2>
-      <p class="lead">챔버 도입, 채소 정기 공급, 실증과 투자 협력 문의를 아래 메일로 받습니다. 문의 종류를 고르면 제목이 채워진 메일 창이 열립니다.</p>
-    </div>
-    <div>
-      <a class="mail" href="mailto:info@solaum.co.kr">info@solaum.co.kr</a>
-      <dl>
-        <dt>전화</dt><dd><a href="tel:+82533829789">053-382-9789</a></dd>
-        <dt>주소</dt><dd>대구광역시 북구 검단로 161</dd>
-      </dl>
-      <div class="topics">
-        <a class="btn ghost" href="mailto:info@solaum.co.kr?subject=%5B%EC%86%94%EB%9D%BC%EC%9B%80%5D%20%EC%B1%84%EC%86%8C%20%EC%A0%95%EA%B8%B0%20%EA%B3%B5%EA%B8%89%20%EB%AC%B8%EC%9D%98">채소 공급 문의</a>
-        <a class="btn ghost" href="mailto:info@solaum.co.kr?subject=%5B%EC%86%94%EB%9D%BC%EC%9B%80%5D%20%EC%B1%94%EB%B2%84%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98">챔버 도입 문의</a>
-        <a class="btn ghost" href="mailto:info@solaum.co.kr?subject=%5B%EC%86%94%EB%9D%BC%EC%9B%80%5D%20%EC%8B%A4%EC%A6%9D%C2%B7%ED%88%AC%EC%9E%90%20%ED%98%91%EB%A0%A5%20%EB%AC%B8%EC%9D%98">실증·투자 협력 문의</a>
+    <h2 id="vision-h">Fresh Food,<br>Grown Where People Live.</h2>
+    <p>기후와 유통에 흔들리는 신선 채소를, 사람이 사는 도시 안에서 연중 계획 생산합니다. 대구에서 검증한 모델을 전국의 원도심과 폐교로 넓혀 갑니다.</p>
+  </div>
+</section>
+
+<section class="sec glow" id="contact" data-nav="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-dark">
+        <h2 id="contact-h">도시 유휴 공간의 농장 전환을 함께 실증해 보세요.</h2>
+        <p>채소 정기 공급, 챔버 도입, 공공 유휴공간 실증과 투자 협력 문의를 받습니다.</p>
+        <div class="c-type"><b>채소 정기 공급</b><span>식당, 카페, 병원, 요양시설 급식용 맞춤 채소</span></div>
+        <div class="c-type"><b>챔버 도입</b><span>연구·교육기관, 소규모 재배사용 챔버와 AI 운영 서비스</span></div>
+        <div class="c-type"><b>실증·투자 협력</b><span>공공 유휴공간 실증, 정부 R&amp;D 공동 수행, 시드 투자</span></div>
+        <p class="c-meta">이메일 <a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a><br>전화 <a href="tel:+82533829789">053-382-9789</a><br>대구광역시 북구 검단로 161</p>
       </div>
+      <form class="card raised form" id="inquiry" novalidate>
+        <h3>도입·협력 문의</h3>
+        <div class="field"><label for="f-name">이름</label><input id="f-name" name="name" autocomplete="name" placeholder="홍길동"></div>
+        <div class="field"><label for="f-org">기관/회사</label><input id="f-org" name="org" autocomplete="organization" placeholder="기관 또는 회사 이름"></div>
+        <div class="field"><label for="f-email">회신 이메일</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+        <div class="field"><label for="f-topic">문의 분야</label>
+          <select id="f-topic" name="topic"><option>채소 정기 공급</option><option>챔버 도입</option><option>실증·투자 협력</option><option>기타</option></select></div>
+        <div class="field full"><label for="f-msg">문의 내용</label><textarea id="f-msg" name="message" placeholder="필요한 품목과 물량, 설치를 생각하는 공간, 협력하고 싶은 내용을 적어 주세요."></textarea></div>
+        <div class="form-foot"><button class="btn primary" type="submit">이메일 문의 작성</button><small>입력한 내용으로 메일 작성 창이 열립니다. 이 페이지에는 저장되지 않습니다.</small></div>
+      </form>
     </div>
   </div>
 </section>
@@ -746,35 +668,68 @@ footer .copy{grid-column:1/-1;margin-top:8px}
 
 <footer>
   <div class="wrap">
-    <dl>
-      <dt>상호</dt><dd>솔라움 주식회사</dd>
-      <dt>대표이사</dt><dd>유종무</dd>
-      <dt>사업자등록번호</dt><dd>335-87-03961</dd>
-      <dt>주소</dt><dd>대구광역시 북구 검단로 161</dd>
-      <dt>이메일</dt><dd><a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a></dd>
-    </dl>
-    <details>
-      <summary>통계 출처 보기</summary>
-      <ul>
-        <li>채소류 소비자물가: 2026년 8월 소비자물가동향 (2026.9 발표)</li>
-        <li>농산물 유통비용률: 2023년 농산물 유통실태조사</li>
-        <li>상가 공실률: 2026년 3분기 상업용부동산 임대동향</li>
-        <li>농림어가 고령화: 2025년 농림어업총조사</li>
-        <li>수직농장 전력 사용량: arXiv 2603.15806</li>
-        <li>반사 커튼·근접 조명 효율: Frontiers in Plant Science, 2023</li>
-        <li>재배 레시피 근거: 안동대(2018), 국립원예특작과학원(2010), 전북대(2016)</li>
-      </ul>
-    </details>
+    <div>
+      <a class="brand" href="#main" aria-label="솔라움 처음으로"><img src="img/solaum-logo.png" width="416" height="152" alt="솔라움 SOLAUM" loading="lazy"></a>
+      <dl>
+        <dt>상호</dt><dd>솔라움 주식회사</dd>
+        <dt>대표이사</dt><dd>유종무</dd>
+        <dt>사업자등록번호</dt><dd>335-87-03961</dd>
+        <dt>주소</dt><dd>대구광역시 북구 검단로 161</dd>
+        <dt>이메일</dt><dd><a href="mailto:info@solaum.co.kr">info@solaum.co.kr</a></dd>
+      </dl>
+    </div>
+    <div>
+      <details>
+        <summary>통계·연구 출처 보기</summary>
+        <ul>
+          <li>채소류 소비자물가: 2026년 8월 소비자물가동향</li>
+          <li>농산물 유통비용률: 2023년 농산물 유통실태조사</li>
+          <li>상가 공실률: 2026년 3분기 상업용부동산 임대동향</li>
+          <li>농림어가 고령화: 2025년 농림어업총조사</li>
+          <li>수직농장 전력 사용량: arXiv 2603.15806</li>
+          <li>반사 커튼·근접 조명 효율: Frontiers in Plant Science, 2023</li>
+          <li>재배 레시피 근거: 안동대(2018), 국립원예특작과학원(2010), 전북대(2016)</li>
+        </ul>
+      </details>
+      <p class="small muted" style="margin-top:18px">이 사이트의 시설·챔버 이미지는 구상 단계의 콘셉트 렌더링입니다.</p>
+    </div>
     <p class="copy">© 2026 솔라움 주식회사</p>
   </div>
 </footer>
 
 <script>
-  (function(){
-    var top=document.getElementById('top');
-    function onScroll(){ top.classList.toggle('scrolled', window.scrollY>8); }
-    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-  })();
+(function(){
+  // scrollspy
+  var links={}; document.querySelectorAll('.nav a[data-nav]').forEach(function(a){links[a.dataset.nav]=a;});
+  var current=null;
+  function setActive(key){ if(key===current) return; current=key;
+    Object.keys(links).forEach(function(k){ links[k].classList.toggle('active', k===key); if(k===key){links[k].setAttribute('aria-current','true');}else{links[k].removeAttribute('aria-current');} }); }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ setActive(e.target.dataset.nav||null); } }); },
+      {rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('[data-nav]:not(a)').forEach(function(s){ io.observe(s); });
+  }
+  // tabs
+  var tabs=document.querySelectorAll('.tabs [role=tab]'), img=document.getElementById('farm-img');
+  tabs.forEach(function(t){ t.addEventListener('click',function(){
+    tabs.forEach(function(o){ o.setAttribute('aria-selected', o===t?'true':'false'); o.tabIndex = o===t?0:-1; });
+    img.src='img/'+t.dataset.img+'.webp';
+    img.srcset='img/'+t.dataset.img+'-800.webp 800w, img/'+t.dataset.img+'.webp 1586w';
+    img.alt=t.dataset.alt;
+  }); });
+  document.querySelector('.tabs') && document.querySelector('.tabs').addEventListener('keydown',function(e){
+    var list=[].slice.call(tabs), i=list.indexOf(document.activeElement); if(i<0) return;
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ e.preventDefault(); var n=list[(i+(e.key==='ArrowRight'?1:list.length-1))%list.length]; n.focus(); n.click(); }
+  });
+  // inquiry form -> mail draft
+  var f=document.getElementById('inquiry');
+  f && f.addEventListener('submit',function(e){ e.preventDefault();
+    var v=function(n){ return (f.elements[n].value||'').trim(); };
+    var subject='[솔라움] '+v('topic')+' 문의'+(v('org')?' - '+v('org'):'');
+    var body='이름: '+v('name')+'\n기관/회사: '+v('org')+'\n회신 이메일: '+v('email')+'\n문의 분야: '+v('topic')+'\n\n'+v('message');
+    window.location.href='mailto:info@solaum.co.kr?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+})();
 </script>
 </body>
 </html>
